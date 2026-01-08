@@ -5,106 +5,171 @@
 
 
 @font-face {
-    font-family: '';
-    src: url('') format('');
-    font-style: ;
+    font-family: 'HindGuntur';
+    src: url('../assets/fonts/HindGuntur-Light.ttf') format('truetype');
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: '';
-    src: url('') format('');
-    font-style: ;
+    font-family: 'HindGuntur';
+    src: url('../assets/fonts/HindGuntur-Regular.ttf') format('truetype');
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: '';
-    src: url('') format('');
-    font-style: ;
-}
-
-@font-face {
-    font-family: '';
-    src: url('') format('');
-    font-style: ;
-}
-
-@font-face {
-    font-family: '';
-    src: url('') format('');
-    font-style: ;
+    font-family: 'HindGuntur';
+    src: url('../assets/fonts/HindGuntur-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 @layer styleguide {
     :root {
         /* Variabelen Kleuren */
-        --color-: ;
-        --color-: ;
-        --color-: ;
-        --color-: ;
-        --color-: ;
-        --color-: ;
-        --color-: ;
-        
+        --c-brand-main: #e2655e;
+        --c-brand-soft: #f7cdd5;
+
+        --c-accent-main: #281ce2;
+        --c-accent-soft: #eef9fd;
+
+        --c-text: #000;
+        --c-bg-main: #fff;
+        --c-bg-accent: #abb8c3;
         
         /* Variabelen Typografie */
-        --font-family-serif: ;
+        --font-base: 'HindGuntur', sans-serif;
             
-        --font-size-p-s: ;
-        --font-size-p-m: ;
-        --font-size-p-l: ;
-        --font-size-p-xl: ;
+        --fs-p-s: clamp(1rem, 1.5vw, 1.125rem);
+        --fs-p-m: clamp(1.1rem, 2vw, 1.45rem);;
+        --fs-p-l: ;
+        --fs-p-xl: ;
+
+        --fs-h1: clamp(2.75rem, 6vw, 4.6rem);
+        --fs-h2: clamp(2rem, 4vw, 3.25rem);
+        --fs-h3: clamp(2rem, 4vw, 3.25rem);
+        --fs-h4: clamp(2.1rem, 3.5vw, 2.55rem);
         
-        --font-weight-light: ;
-        --font-weight-medium: ;
-        --font-weight-regular: ;
-        --font-weight-semibold: ;
-        --font-weight-bold: ;
+        --fw-light: 300;
+        --fw-medium: 400;
+        --fw-bold: 700;
 
-        --line-hight-s: ;
-        --line-hight-m: ;
-        --line-hight-l: ;
+        --lh-heading: 1.15;
+        --lh-body: 1.5;
+        --lh-link: 1; 
 
-        /* Variabelen button */
-        --btn-padding:;
+        /* gradients */
+        --g-soft:linear-gradient(transparent 14%,var(--c-brand-soft) 15%,var(--c-brand-soft) 69%,transparent 70%);
+        --g-strong: linear-gradient(transparent 14%,var(--c-brand-main) 15%,var(--c-brand-main) 69%,transparent 70%);
+        --g-heading:linear-gradient(transparent 14%,var(--c-text) 15%,var(--c-text) 69%,transparent 70%);
+
+        --g-theme-main:linear-gradient(transparent 0,var(--c-brand-soft) 0,var(--c-brand-soft) 100%,transparent 100%);
+        --g-theme-accent:linear-gradient(transparent 0,var(--c-accent-soft) 0,var(--c-accent-soft) 100%,transparent 100%);
+        --g-theme-text:linear-gradient(transparent 0,var(--c-text) 0,var(--c-text) 100%,transparent 100%);
     }
 
-    /*---- kleuren ----*/
+    /*---- kleuren themas----*/
+    .theme-main {
+        background-image: var(--g-theme-main);
+        background-color: var(--c-brand-main);
+        color: var(--c-brand-soft);    
+        &:hover{
+            background-color: var(--c-brand-soft);
+            color: var(--c-brand-main);  
+        }
+        /*focus is default*/      
+    }
 
+    .theme-accent {
+        background-image: var(--g-theme-accent);
+        background-color: var(--c-accent-main);
+        color: var(--c-accent-soft);
+        &:hover{
+            background-color: var(--c-accent-soft);
+            color: var(--c-accent-main);
+        }
+        /*focus is default*/   
+    }
+
+    .theme-text {
+        background-image: var(--g-theme-text);
+        background-color: var(--c-bg-main);
+        color: var(--c-text);
+        &:hover{
+            background-color: var(--c-text);
+            color: var(--c-bg-main);
+        }
+        /*focus is default*/   
+    }
+    
     /*---- Typografie ----*/
     h1,
     h2,
     h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--font-family-heading);
-        color: var(--color-primary);
-        font-weight: var(--font-weight-semibold);
-        margin:0 0 .6em;
+    h4 {
+        font-family: var(--font-base);
+        color: var(--c-text);
     }
 
-    h1 {}
-    h2 {}
-    h3 {}
+    h1 {
+        line-height: var(--lh-heading);
+        font-size: var(--fs-h1);
+    }
 
-    p {}
+    h2 {
+        line-height: var(--lh-heading);
+        font-size: var(--fs-h2);
+    }
+
+    h3 {
+        line-height: var(--lh-heading);
+        font-size: var(--fs-h3);
+    }
+
+    p {
+        line-height: var(--lh-body);
+        font-size: var(--fs-p-m);
+        font-family: var(--font-base);
+    }
+
+    strong {
+        font-weight: var(--fw-bold);
+    }
+
+    mark{
+        color: var(--c-text);
+        background-color: var(--c-bg-main);
+        background-color: transparent;
+        background-image: var(--g-heading);
+        background-size: 0 100%;
+        transition: .5s ease;
+        background-repeat: no-repeat;
+        &:hover{
+            background-size: 100% 100%;
+            color: var(--c-bg-main);
+        }
+    }
 
     /*---- list styling ----*/
+    ul, ol{
+        list-style: none;
+    }
+     
     li{
-        &:hover{}
-        &:focus{}
+        text-decoration: none;
     }
 
     /*---- Formulier styling ----*/
-    form {
+    /*---- Firefox ondersteunt nog geen :has dus gebruik ik ook een class beetje stom maar wil graag leren ----*/
+    form:has(input[type="search"]) {
+        background-color: var(--c-bg-accent);
         label {}
 
-        input[type="text"]{
+        input[type="search"]{
+            padding: 0.79em 1.05em 0.42em 0.53em;
             &:hover {}
         }
     }
 
-    form {
+    form:has(input[type="email"]) {
         label {}
 
         input[type="email"] {
@@ -115,20 +180,35 @@
         }
     }
 
-
-
     /*---- Knoppen styling ----*/
 
     .btn {
-        &:hover {}
-        &:focus{}
+        text-transform: lowercase;
+        text-decoration: none;
+        font-family: var(--font-base);
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-p-s);
+        line-height: var(--lh-link);
+        border: 0;
+        cursor: pointer;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.06em 1.67em 0.7em 1.67em;
+
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition: .5s ease;
+        width: fit-content;
+        &:hover, &:focus{
+            background-size: 100% 100%;
+            color: var(--c-brand-main);
+        }
     }
-    /* drie thema kleuren*/
 
-
-
-    /*---- navigatie link ----*/
-    .nav-primary-link{
+    /*---- navigatie ----*/
+    nav .hoofdnavigatie{
         &:hover {}
         &:focus{}
         &:visited{}
@@ -139,29 +219,54 @@
         }
     }
 
-    .nav-article-section-link{ /*normal button + nav-article*/
+    nav .paginanavigatie{
+        &:hover {}
         &:focus{}
+        &:visited{}
         &:active{}
+    }
+
+    nav .footernavigatie{
+        &:hover {}
+        &:focus{}
+        &:visited{}
+        &:active{} 
     }
 
     /*---- Linkjes styling ----*/
 
-    article a {
-        svg{
-            &:hover {}
+    a{
+        text-decoration: none;
+        color: var(--c-text);
+        font-family: var(--font-base);
+    }
+
+    p a {
+        background-image: var(--g-strong);
+        background-repeat: no-repeat;
+        transition: .5s ease;
+        background-size: 0% 100%;
+        color: var(--c-brand-main);
+        &:hover, &:focus{
+            background-size: 100% 100%;
+            color: var(--c-bg-main);
         }
     }
 
     footer a {
-        &:hover {}
-        &:focus{}
-        &:visited{}
+        background-image: var(--g-soft);
+        background-repeat: no-repeat;
+        transition: .5s ease;
+        background-size: 0% 100%;
+        color: var(--c-text);
+
+        &:hover {
+            background-size: 100% 100%;
+        }
     }
 
-    p a {
-        &:hover {}
-        &:focus{}
-        &:visited{}
+    .onderstreept{
+        text-decoration: underline;
     }
+
 }
-
