@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: '';
+    src: url('') format('');
+    font-style: ;
+}
+
+@font-face {
+    font-family: '';
+    src: url('') format('');
+    font-style: ;
+}
+
+@font-face {
+    font-family: '';
+    src: url('') format('');
+    font-style: ;
+}
+
+@font-face {
+    font-family: '';
+    src: url('') format('');
+    font-style: ;
+}
+
+@font-face {
+    font-family: '';
+    src: url('') format('');
+    font-style: ;
+}
+
+@layer styleguide {
+    :root {
+        /* Variabelen Kleuren */
+        --color-: ;
+        --color-: ;
+        --color-: ;
+        --color-: ;
+        --color-: ;
+        --color-: ;
+        --color-: ;
+        
+        
+        /* Variabelen Typografie */
+        --font-family-serif: ;
+            
+        --font-size-p-s: ;
+        --font-size-p-m: ;
+        --font-size-p-l: ;
+        --font-size-p-xl: ;
+        
+        --font-weight-light: ;
+        --font-weight-medium: ;
+        --font-weight-regular: ;
+        --font-weight-semibold: ;
+        --font-weight-bold: ;
+
+        --line-hight-s: ;
+        --line-hight-m: ;
+        --line-hight-l: ;
+
+        /* Variabelen button */
+        --btn-padding:;
+    }
+
+    /*---- kleuren ----*/
+
+    /*---- Typografie ----*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-family-heading);
+        color: var(--color-primary);
+        font-weight: var(--font-weight-semibold);
+        margin:0 0 .6em;
+    }
+
+    h1 {}
+    h2 {}
+    h3 {}
+
+    p {}
+
+    /*---- list styling ----*/
+    li{
+        &:hover{}
+        &:focus{}
+    }
+
+    /*---- Formulier styling ----*/
+    form {
+        label {}
+
+        input[type="text"]{
+            &:hover {}
+        }
+    }
+
+    form {
+        label {}
+
+        input[type="email"] {
+            &:hover{}
+            &:user-invalid {}
+            &:valid {}
+            &:required{}
+        }
+    }
+
+
+
+    /*---- Knoppen styling ----*/
+
+    .btn {
+        &:hover {}
+        &:focus{}
+    }
+    /* drie thema kleuren*/
+
+
+
+    /*---- navigatie link ----*/
+    .nav-primary-link{
+        &:hover {}
+        &:focus{}
+        &:visited{}
+        &:active{}
+
+        svg{
+            &:hover {}
+        }
+    }
+
+    .nav-article-section-link{ /*normal button + nav-article*/
+        &:focus{}
+        &:active{}
+    }
+
+    /*---- Linkjes styling ----*/
+
+    article a {
+        svg{
+            &:hover {}
+        }
+    }
+
+    footer a {
+        &:hover {}
+        &:focus{}
+        &:visited{}
+    }
+
+    p a {
+        &:hover {}
+        &:focus{}
+        &:visited{}
+    }
+}
+
