@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="https://labelvier.nl/">
-            <img src="./assets/logo.svg" alt="">
+            <img src="./assets/logo.svg" alt="Label Vier – naar de homepage">
         </a>
 
         <form role="search">
@@ -19,8 +19,8 @@
                 <input id="search" type="search">
             </label>
             
-            <button type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+            <button type="submit" aria-label="zoeken">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
             </button>
         </form>
 
@@ -30,10 +30,10 @@
 
                 <li>
                     <a href="https://labelvier.nl/diensten/">diensten</a>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    <button aria-expanded="false" aria-controls="diensten-submenu">
+                        <span class="visually-hidden">Submenu diensten openen</span>
                     </button>
-                    <ul>
+                    <ul id="diensten-submenu">
                         <li><a href="https://labelvier.nl/diensten/personas-ontwikkelen/">persona’s</a></li>
                         <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">klantreizen</a></li>
                         <li><a href="https://labelvier.nl/diensten/contentstrategie/">contentstrategie</a></li>
@@ -46,10 +46,10 @@
 
                 <li>
                     <a href="https://labelvier.nl/over-ons/">over ons</a>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    <button aria-expanded="false" aria-controls="overons-submenu">
+                        <span class="visually-hidden">Submenu over ons openen</span>
                     </button>
-                    <ul>
+                    <ul id="overons-submenu">
                         <li><a href="https://labelvier.nl/werken-bij-label-vier/">Werken bij</a></li>
                     </ul>
                 </li>
@@ -63,176 +63,131 @@
 
     <main>
         <section>
-            <h1> <strong>Projecten</strong> waar we trots op zijn!</h1>
+            <h1><strong>Projecten</strong> waar we trots op zijn!</h1>
 
             <!--voetbalveld-->
-            <article>
-                <figure>
-                    <img src="./assets/images/voetbalveld-figure.webp" alt="groen gras van een voetbalveld met witte streep">
-                    <figcaption>
-                        <img src="./assets/images/voetbalveld-logo.webp" alt="logo van voetbal international">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/voetbalveld-logo.webp" alt="Voetbal international" class="logo">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>Hoe we de webshop van Voetbal International toekomstbestendig maakten</mark></h2>
+                    <h2>Hoe we de webshop van Voetbal International toekomstbestendig maakten</h2>
                     <p>Voetbal International (VI) kwam bij ons met een technisch verouderde webshop die toe was aan vernieuwing. Wij migreerden naar een nieuw platform, verbeterden stabiliteit en gebruikservaring, en maakte ...</p>
-                    <a href="https://labelvier.nl/case/hoe-we-de-webshop-van-voetbal-international-toekomstbestendig-maakten/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/hoe-we-de-webshop-van-voetbal-international-toekomstbestendig-maakten/" class="breakout-a">lees meer <span class="opacity-0">over voetbal international</span></a>
                 </div>
             </article>
 
             <!--lunar-->
-            <article>
-                <figure>
-                    <img src="./assets/images/lunar-figure.webp" alt="Persoon met een skateboard staat tussen hoge betonnen muren, grotendeels verborgen achter een grote wolk felpaarse rook.">
-                    <figcaption>
-                        <img src="./assets/images/lunar-logo.webp" alt="logo van lunar institue en fresh forward">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/lunar-logo.webp" alt="Lunar institue en fresh forward" class="logo">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>Fresh Foward en LUNAR Institute: zo ontwikkelden we twee unieke websites met dezelfde basis</mark></h2>
+                    <h2>Fresh Foward en LUNAR Institute: zo ontwikkelden we twee unieke websites met dezelfde basis</h2>
                     <p>Twee organisaties met een eigen identiteit, maar met dezelfde kijk op vernieuwing. Fresh Forward helpt organisaties hun visie en strategie door te vertalen naar mindset en gedrag binnen teams. LUNAR I ...</p>
-                    <a href="https://labelvier.nl/case/fresh-foward-en-lunar-institute-zo-ontwikkelden-we-twee-unieke-websites-met-dezelfde-basis/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/fresh-foward-en-lunar-institute-zo-ontwikkelden-we-twee-unieke-websites-met-dezelfde-basis/" class="breakout-a">lees meer <span class="opacity-0">over Lunar institue en fresh forward</span></a>
                 </div>
             </article>
 
             <!--dushi-->
-            <article>
-                <figure>
-                    <img src="./assets/images/dushie-figure.webp" alt="Meerdere mensen schilderen samen aan een groot, kleurrijk kunstwerk op tafel, met abstracte vormen en felle kleuren, terwijl verschillende handen met kwasten tegelijk bezig zijn.">
-                    <figcaption>
-                        <img src="./assets/images/dushie-logo.webp" alt="logo van dushi huis">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/dushie-logo.webp" alt="Dushi Huis">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>Website Dushi Huis: een digitaal thuis waar het leven gevierd wordt</mark></h2>
+                    <h2>Website Dushi Huis: een digitaal thuis waar het leven gevierd wordt</h2>
                     <p>Dushi Huis biedt kinderen en jongeren van 4 tot 18+ jaar, die niet meer thuis kunnen wonen, een kleinschalige, veilige woonplek in een echt huis. Daarom maakten we voor Dushi Huis een website die voel ...</p>
-                    <a href="https://labelvier.nl/case/website-dushi-huis-een-digitaal-thuis-waar-het-leven-gevierd-wordt/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/website-dushi-huis-een-digitaal-thuis-waar-het-leven-gevierd-wordt/" class="breakout-a">lees meer <span class="opacity-0">over Dushi Huis</span></a>
                 </div> 
             </article>
 
             <!--MUNJI-->
-            <article>
-                <figure>
-                    <img src="./assets/images/munji-figure.webp" alt="">
-                    <figcaption>
-                        <img src="./assets/images/munji-logo.png" alt="">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/munji-logo.png" alt="Munji">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>MUNJI: zo bouwden we een webshop voor dit bordspel</mark></h2>
+                    <h2>MUNJI: zo bouwden we een webshop voor dit bordspel</h2>
                     <p>MUNJI – The Green Revolution Game is een nieuw bordspel waarin spelers de wereld vergroenen. Hun vraag aan ons was helder: “Kunnen jullie een webshop bouwen?” Dat leek ons een mooie  ...</p>
-                    <a href="https://labelvier.nl/case/munji-zo-bouwden-we-een-webshop-voor-dit-bordspel/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/munji-zo-bouwden-we-een-webshop-voor-dit-bordspel/" class="breakout-a">lees meer <span class="opacity-0">over Munji</span></a>
                 </div>
             </article>
 
             <!--Jurriëns-->
-            <article>
-                <figure>
-                    <img src="./assets/images/jurriens-figure.webp" alt="Doos van het bordspel MUNJI – The Green Revolution Game, met een geïllustreerde panda en wolf die naar een groene dobbelsteen kijken, omringd door een kleurrijke natuur met bomen, bloemen en dieren.">
-                    <figcaption>
-                        <img src="./assets/images/jurriens-logo.png" alt="logo van munji">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/jurriens-logo.png" alt="Jurriens">      
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>Een eregalerij voor Jurriëns</mark></h2>
+                    <h2>Een eregalerij voor Jurriëns</h2>
                     <p>Wat hebben Felix Meritis, Gran Hotel Amrâth in Amsterdam en het Muntgebouw in Utrecht gemeen? Deze historische en monumentale gebouwen zijn weer in oude glorie hersteld door Jurriëns. Van restauratie  ...</p>
-                    <a href="https://labelvier.nl/case/een-eregalerij-voor-jurriens/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/een-eregalerij-voor-jurriens/" class="breakout-a">lees meer <span class="opacity-0">over Jurriens</span></a>
                 </div>   
             </article>
 
             <!--EURid-->
-            <article>
-                <figure>
-                    <img src="./assets/images/eurid-figure.webp" alt="">
-                    <figcaption>
-                        <img src="./assets/images/eurid-logo.webp" alt="">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/eurid-logo.webp" alt="EURid">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>EURid: een website voor de .eu-domeinnamen</mark></h2>
+                    <h2>EURid: een website voor de .eu-domeinnamen</h2>
                     <p>EURid is de uitgever van alle domeinnamen die eindigen op .eu, .ею (Cyrillisch schrift) en .ευ (Grieks schrift). Het gedeelte achter de ‘.’ in een websitelink heet een domeinextensie. Dus bij eurid.eu ...</p>
-                    <a href="https://labelvier.nl/case/eurid-een-website-voor-de-eu-domeinnamen/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/eurid-een-website-voor-de-eu-domeinnamen/" class="breakout-a">lees meer <span class="opacity-0">over EURid</span></a>
                 </div>
             </article>
 
             <!--Invest International-->
-            <article>
-                <figure>
-                    <img src="./assets/images/invest-figure.webp" alt="">
-                    <figcaption>
-                        <img src="./assets/images/Invest-logo.webp" alt="">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/Invest-logo.webp" alt="Invest">       
+                </div>
+
                 <div class="article-text">
-                    <h2><mark>Zo versimpelden we de complexe website van Invest International</mark></h2>
+                    <h2>Zo versimpelden we de complexe website van Invest International</h2>
                     <p>Invest International kwam met de wens voor een website die naadloos aansluit op de vragen van hun doelgroep. Ook wilden ze graag gelijk duidelijk maken wat ze doen. Een mooie uitdaging, vonden we. We  ...</p>
-                    <a href="https://labelvier.nl/case/zo-versimpelden-we-de-complexe-website-van-invest-international/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/zo-versimpelden-we-de-complexe-website-van-invest-international/" class="breakout-a">lees meer <span class="opacity-0">over Invest</span></a>
                 </div>
             </article>
 
 
             <!--Gerrit Jans Hoeve-->
-            <article>
-                <figure>
-                    <img src="./assets/images/gerrit-Janshoeve-figure.png" alt="">
-                    <figcaption>
-                        <img src="./assets/images/gerrit-Janshoeve-logo.webp" alt="">       
-                    </figcaption>
-                </figure>
+            <article class="article-card">
+                <div class="article-visual">
+                    <img src="./assets/images/gerrit-Janshoeve-logo.webp" alt="Janshoeve">       
+                </div>
                 <div class="article-text">
-                    <h2><mark>Een multisite voor Gerrit Jans Hoeve</mark></h2>
+                    <h2>Een multisite voor Gerrit Jans Hoeve</h2>
                     <p>Hoe zorg je ervoor dat 5 websites verschillend zijn, maar toch eenheid uitstralen? Met deze uitdagende vraag gingen we aan de slag voor Gerrit Jans Hoeve. Een bedrijf dat bestaat uit de vakantieparken ...</p>
-                    <a href="https://labelvier.nl/case/een-multisite-voor-gerrit-jans-hoeve/">
-                        lees meer
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
-                    </a>
+                    <a href="https://labelvier.nl/case/een-multisite-voor-gerrit-jans-hoeve/" class="breakout-a">lees meer <span class="opacity-0">over Janshoeve</span></a>
                 </div>       
             </article>
 
             <nav class="paginanavigatie" aria-label="paginanavigatie">
                 <ol>
-                    <!-- <?>pijltje links</?>-->
                     <li><a aria-current="page" href="./cases-page1.html"></a>1</li>
                     <li><a href="./pages/cases-page2.html">2</a></li>
                     <li><a href="./pages/cases-page3.html">3</a></li>
                     <li><a href="./pages/cases-page4.html">4</a></li>
-                    <!-- <?>pijltje rechts</?>-->
+                    <li><a href="./pages/cases-page2.html" aria-label="Ga naar volgende pagina"></a></li>
                 </ol>
             </nav>
         </section>
 
         <section>
             <h2>Wat kunnen we voor jou <strong>betekenen?</strong></h2>
-            <button class="btn theme-main">bekijk de mogelijkheden</button>
+            <a href="https://labelvier.nl/diensten/" class="btn theme-main">bekijk de mogelijkheden</a>
         </section>
 
     </main>
 
     <footer>
-        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 5.8" preserveAspectRatio="none">
-            <path fill="#fff" d="M5.4.4l5.4 5.3L16.5.4l5.4 5.3L27.5.4 33 5.7 38.6.4l5.5 5.4h.1L49.9.4l5.4 5.3L60.9.4l5.5 5.3L72 .4l5.5 5.3L83.1.4l5.4 5.3L94.1.4l5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3L161 .4l5.4 5.3L172 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3L261 .4l5.4 5.3L272 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3L361 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3L461 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1L550 .4l5.4 5.3L561 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2L650 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2L750 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2L850 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4V0H-.2v5.8z"></path>
-        </svg>
         <div class="upper-footer">
             <section>
                 <h3>Label Vier</h3>
@@ -241,7 +196,7 @@
             </section>
             <section>
                 <h3>Diensten</h3>
-                <nav class="footernavigatie" aria-label="dienstennavigatie">
+                <nav class="footernavigatie"><!--aria-label="dienstennavigatie" niet nodig want heading-->
                     <ul>
                         <li><a href="https://labelvier.nl/onze-methode/">Label Vier methode</a></li>
                         <li><a href="https://labelvier.nl/wetenschappelijk-fundament/">Ons wetenschappelijk fundament</a></li>
@@ -257,7 +212,7 @@
             
             <section>
                 <h3>Informatie</h3>
-                <nav class="footernavigatie" aria-label="Informatienavigatie">
+                <nav class="footernavigatie"><!--aria-label="informatienavigatie" niet nodig want heading-->
                     <ul>
                         <li><a href="https://labelvier.nl/jouw-privacy/">Jouw privacy</a></li>
                         <li><a href="https://labelvier.nl/diensten/label-vier-support/algemene-voorwaarden-label-vier/">Algemene voorwaarden</a></li>
@@ -278,7 +233,6 @@
             </form>
         </section>
     </footer>
-
 
     <script src="./js/script.js"></script> 
 </body>
