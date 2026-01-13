@@ -1,22 +1,119 @@
-/*test voor klikable article*/
+header{
+    a{
+        img{}
+    }
+    button{
+        svg{}
+        .menu-open-btn{}
+        .menu-close-btn{}
+    }
+    .hoofdnavigatie{
+        form{
+            label{
+                span{}
+                input{}
+            }
+            button{
+                svg{}
+            }
+        }
+        ul{
+            li{
+                a{}
+            }
 
-.article-card{
-    position: relative
+            li{
+                a{}
+                button{}
+                ul{
+                    li{
+                        a{}
+                    }
+                }
+            }
+        }
+    }
 }
 
-.breakout-a{
-    position: static;
-    &::before{
-        cursor: pointer;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;/*groei tot de eerst beste container met relative absolute of fixed*/
+.article-section{
+    .article-card{
+        position: relative;
+        .article-visual{
+            img{}
+        }
+        .article-text{
+            h2{}
+            p{}
+            a{}
+            .breakout-a{
+                position: static;
+                &::before{
+                    cursor: pointer;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;/*groei tot de eerst beste container met relative absolute of fixed*/
+                }
+                &:focus{
+                    outline: none;
+                }
+            }   
+        }
     }
-    &:focus{
-        outline: none;
+}
+
+.paginanavigatie{
+    ol{
+        li{
+            a{}
+        }
+    }
+}
+
+.contact-section{
+    h2{}
+    a{}
+}
+
+footer{
+    .upper-footer{
+        .bedrijf-info-section{
+            h3{}
+            address{}
+            a{}
+        }
+        .diensten-section{
+            nav{
+                ul{
+                    li{
+                        a{}
+                    }
+                }
+            }
+        }
+        .informatie-section{
+            h3{}
+            nav{
+                ul{
+                    li{
+                        a{}
+                    }
+                }
+            }
+            button{}
+        }
+    }
+    .lower-footer{
+        h3{}
+        form{
+            label{
+                span{}
+            }
+            input{}
+            button{}
+        }
     }
 }
