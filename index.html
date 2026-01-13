@@ -13,14 +13,14 @@
             <img src="./assets/images/logo.svg" alt="Label Vier – naar de homepage">
         </a>
 
-        <form role="search">
-            <label for="search">
-                Zoeken..
-                <input id="search" type="search">
+        <form class="zoek-form">
+            <label for="search-input">
+                <span class="opacity-0 absolute">Zoeken</span>
+                <input class="breakout-a" type="search" id="search-input" placeholder="Zoeken..">
             </label>
-            
+              
             <button type="submit" aria-label="zoeken">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
             </button>
         </form>
 
@@ -30,10 +30,10 @@
 
                 <li>
                     <a href="https://labelvier.nl/diensten/">diensten</a>
-                    <button aria-expanded="false" aria-controls="diensten-submenu">
+                    <button class="caret-diensten" aria-expanded="false" aria-controls="diensten-submenu">
                         <span class="invisable">Submenu diensten openen</span>
                     </button>
-                    <ul id="diensten-submenu">
+                    <ul id="diensten-submenu" class="hidden">
                         <li><a href="https://labelvier.nl/diensten/personas-ontwikkelen/">persona’s</a></li>
                         <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">klantreizen</a></li>
                         <li><a href="https://labelvier.nl/diensten/contentstrategie/">contentstrategie</a></li>
@@ -46,10 +46,10 @@
 
                 <li>
                     <a href="https://labelvier.nl/over-ons/">over ons</a>
-                    <button aria-expanded="false" aria-controls="overons-submenu">
+                    <button class="caret-overons" aria-expanded="false" aria-controls="overons-submenu">
                         <span class="invisable">Submenu over ons openen</span>
                     </button>
-                    <ul id="overons-submenu">
+                    <ul id="overons-submenu" class="hidden">
                         <li><a href="https://labelvier.nl/werken-bij-label-vier/">Werken bij</a></li>
                     </ul>
                 </li>
@@ -226,10 +226,12 @@
 
         <section class="lower-footer">
             <h3>Als eerste onze <strong>blogs</strong> lezen?</h3>
-            <form>
-                <label for="newsletter-email">e-mailadres</label>
-                <input id="newsletter-email" type="email" required>
-                <button type="submit">ik wil de nieuwsbrief</button>
+            <form class="inschrijven-form">
+                <label for="newsletter-email">
+                    <span class="opacity-0 absolute">e-mailadres</span>
+                </label>
+                <input placeholder="e-mailadres" id="newsletter-email" type="email" required>
+                <button class="btn theme-main-reversed" type="submit">ik wil de nieuwsbrief</button>
             </form>
         </section>
     </footer>

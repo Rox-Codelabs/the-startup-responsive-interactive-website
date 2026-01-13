@@ -338,7 +338,7 @@
         font-size: var(--fs-p);
     }
 
-    p a {
+    .link {
         background-image: var(--g-strong);
         background-repeat: no-repeat;
         transition: .5s ease;
@@ -350,7 +350,7 @@
         }
     }
 
-    footer a {
+    .footer-link {
         background-image: var(--g-soft);
         background-repeat: no-repeat;
         transition: .5s ease;
