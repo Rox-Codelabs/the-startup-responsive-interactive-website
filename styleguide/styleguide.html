@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Vier - Styleguide</title>
+    <link rel="stylesheet" href="../styleguide/styleguide.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    
+  </head>
+  <body>
+
+    <header>
+      <h1>Label Vier - Styleguide</h1>
+      <p>Dit is de styleguide voor het project Label Vier. Hierin zijn een aantal huisstijl onderdelen gedefinieerd.</p>
+    </header>
+
+    <nav>
+      <a class="btn theme-text" href="#kleur">Kleuren</a>
+      <a class="btn theme-text" href="#typografie">Typografie</a>
+      <a class="btn theme-text" href="#formulieren">Formulier elementen</a>
+      <a class="btn theme-text" href="#knoppen">Knoppen en linkjes</a>
+    </nav>
+
+    <section id="kleur">
+      <h2>Kleuren</h2>
+      <p>Bij het onderdeel kleuren staat het kleurgebruik voor onze pagina's.</p>
+
+      <figure>
+        <code class="color-1">#e2655e</code>
+        <figcaption>Primaire kleur</figcaption>
+      </figure>
+      <figure>
+        <code class="color-2">#f7cdd5</code>
+        <figcaption>Primaire kleur soft</figcaption>
+      </figure>
+      <figure>
+        <code class="color-3">#281ce2</code>
+        <figcaption>Secundaire kleur</figcaption>
+      </figure>
+      <figure>
+        <code class="color-4">#eef9fd</code>
+        <figcaption>Secundaire kleur soft</figcaption>
+      </figure>
+      <figure>
+        <code class="color-5">#000</code>
+        <figcaption>Primary text kleur</figcaption>
+      </figure>
+        <figure>
+        <code class="color-6">#fff</code>
+        <figcaption>Primary achtergrond kleur</figcaption>
+      </figure>
+       <figure>
+        <code class="color-7">#abb8c3</code>
+        <figcaption>Secundaire achtergrond kleur</figcaption>
+      </figure>
+
+    </section>
+
+
+    <section id="typografie">
+
+      <h2>Typografie</h2>
+      <p>Bij het onderdeel typografie worden fonts en groottes gedemonstreerd.</p>
+
+      <h1>Kop 1</h1>
+      <h2>Kop 2</h2>
+      <h3>Kop 3</h3>
+
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <nav>
+            <ul>
+                <li>Ongeordende lijsten met items</li>
+                <li>Met nog meer items</li>
+                <li>En nog een item</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>Ongeordende lijsten met items</li>
+                <li>Met nog meer items</li>
+                <li>En nog een item</li>
+            </ul>
+        </nav>
+        <nav>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </nav>
+
+    </section>
+
+
+    <section id="formulieren">
+
+        <h2>Formulier elementen</h2>
+        <p>Bij het onderdeel formulier elementen worden input, radio, checkbox en buttons gedemonstreerd.</p>
+        
+        <form class="zoek-form">
+            <label for="search-input">
+                <span class="opacity-0 absolute">Zoeken</span>
+                <input class="breakout-a" type="search" id="search-input" placeholder="Zoeken..">
+            </label>
+              
+            <button type="submit" aria-label="zoeken">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+            </button>
+        </form>
+
+        <br>
+
+        <form class="inschrijven-form">
+            <label for="newsletter-email">
+                <span class="opacity-0 absolute">e-mailadres</span>
+            </label>
+            <input placeholder="e-mailadres" id="newsletter-email" type="email" required>
+            <button class="btn theme-main-reversed" type="submit">ik wil de nieuwsbrief</button>
+        </form>
+    
+    </section>
+
+<!------------------------------------------------------ Knoppen in huisstijl ---------------------------------------------------------------------->
+    <section id="knoppen">
+        <h2>Knoppen en linkjes</h2>
+        <p>Hier vind je de knoppen en linkjes in de huisstijl.</p>
+        
+        <button class="btn theme-main">Primaire knop</button>
+        <button class="btn theme-accent">Secundaire knop</button>
+        <button class="btn theme-text">Hoofdnavigatie knop</button>
+
+        <p>Dit is een <a href="">linkje </a>in een stukje tekst</p>
+        <a href="" class="onderstreept ">Onderstreepte linkjes</a>
+        <footer>
+            <a href="">linkjes in de footer</a>
+        </footer>
+    </section>
+
+  </body>
+</html>

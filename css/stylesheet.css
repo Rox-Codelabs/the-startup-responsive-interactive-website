@@ -34,6 +34,7 @@
         --c-text: #000;
         --c-bg-main: #fff;
         --c-bg-accent: #abb8c3;
+        --c-bg-search:#e6e6e6;
         
         /* Variabelen Typografie */
         --font-base: 'HindGuntur', sans-serif;
@@ -45,8 +46,8 @@
 
         --fs-h1: clamp(2.75rem, 6vw, 4.6rem);
         --fs-h2: clamp(2rem, 4vw, 3.25rem);
-        --fs-h3: clamp(2rem, 4vw, 3.25rem);
-        --fs-h4: clamp(2.1rem, 3.5vw, 2.55rem);
+        --fs-h3: clamp(2.1rem, 3.5vw, 2.55rem);
+        --fs-p: clamp(1.35rem, 2vw, 1.46rem);
         
         --fw-light: 300;
         --fw-medium: 400;
@@ -56,23 +57,57 @@
         --lh-body: 1.5;
         --lh-link: 1; 
 
-        /* gradients */
+        /* gradients*/
         --g-soft:linear-gradient(transparent 14%,var(--c-brand-soft) 15%,var(--c-brand-soft) 69%,transparent 70%);
         --g-strong: linear-gradient(transparent 14%,var(--c-brand-main) 15%,var(--c-brand-main) 69%,transparent 70%);
         --g-heading:linear-gradient(transparent 14%,var(--c-text) 15%,var(--c-text) 69%,transparent 70%);
 
         --g-theme-main:linear-gradient(transparent 0,var(--c-brand-soft) 0,var(--c-brand-soft) 100%,transparent 100%);
         --g-theme-accent:linear-gradient(transparent 0,var(--c-accent-soft) 0,var(--c-accent-soft) 100%,transparent 100%);
-        --g-theme-text:linear-gradient(transparent 0,var(--c-text) 0,var(--c-text) 100%,transparent 100%);
+        --g-theme-text:linear-gradient(transparent 0,var(--c-text) 0,var(--c-text) 100%,transparent 100%);    
     }
 
     /*---- kleuren themas----*/
+    .color-1{
+        background-color: #e2655e;
+    }
+    .color-2{
+        background-color: #f7cdd5;
+    }
+    .color-3{
+        background-color: #281ce2;
+    }
+    .color-4{
+        background-color: #eef9fd;
+    }
+    .color-5{
+        background-color: #000;
+    }
+    .color-6{
+        background-color: #fff;
+    }
+    .color-7{
+        background-color: #abb8c3;
+    }
+
+
     .theme-main {
         background-image: var(--g-theme-main);
         background-color: var(--c-brand-main);
         color: var(--c-brand-soft);    
         &:hover{
             background-color: var(--c-brand-soft);
+            color: var(--c-brand-main);  
+        }
+        /*focus is default*/      
+    }
+
+    .theme-main-reversed {
+        background-image: var(--g-theme-main);
+        background-color: var(--c-bg);
+        color: var(--c-brand-main);    
+        &:hover{
+            background-color: var(--g-strong);
             color: var(--c-brand-main);  
         }
         /*focus is default*/      
@@ -103,8 +138,7 @@
     /*---- Typografie ----*/
     h1,
     h2,
-    h3,
-    h4 {
+    h3{
         font-family: var(--font-base);
         color: var(--c-text);
     }
@@ -126,7 +160,7 @@
 
     p {
         line-height: var(--lh-body);
-        font-size: var(--fs-p-m);
+        font-size: var(--fs-p);
         font-family: var(--font-base);
     }
 
@@ -159,24 +193,86 @@
 
     /*---- Formulier styling ----*/
     /*---- Firefox ondersteunt nog geen :has dus gebruik ik ook een class beetje stom maar wil graag leren ----*/
-    form:has(input[type="search"]) {
-        background-color: var(--c-bg-accent);
-        label {}
+    form:has(input[type="search"]) {}
+
+    form:has(input[type="email"]) {}
+
+    .zoek-form{
+        background-color: var(--c-bg-search);
+        overflow: hidden;
+        font-family: var(--font-base);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        border: 1px solid var(--c-bg-search);
+        padding: 1.5em 2em 0.5em 2em;
+
+        &:focus-within{
+            border: 1px solid var(--c-accent-main);
+            outline: 0;
+        }
+        label {
+            display: flex;
+            cursor: text;
+        }
 
         input[type="search"]{
-            padding: 0.79em 1.05em 0.42em 0.53em;
-            &:hover {}
+            border: none;
+            width: 100%;
+            border: none;
+            background: transparent;
+            cursor: text;
+            font-size: var(--fs-p);
+            font-family: var(--font-base);
+            &:focus-within{
+                border: 1px solid var(--c-bg-search);
+                outline: 0;
+            }
+        }
+
+        button{
+            background: transparent;
+            transform: rotate(90deg);
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            padding-right: 1em;
+            &:hover{
+                color: red;
+            }
+            svg{
+                width: 2.5em;
+                height: 2.5em;
+            }
         }
     }
 
-    form:has(input[type="email"]) {
-        label {}
+    .inschrijven-form{
+        background-color: var(--c-bg-main);
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        border: none;
+
+        label{
+            display: flex;
+            cursor: text;
+        }
 
         input[type="email"] {
-            &:hover{}
-            &:user-invalid {}
-            &:valid {}
-            &:required{}
+            border: none;
+            width: 100%;
+            border: none;
+            cursor: text;
+            padding: 1em 2em 0.5em 1em;
+            font-family: var(--font-base);
+            font-size: var(--fs-p);
+            outline: 0;
+        }
+
+        button{
+            white-space: nowrap;
         }
     }
 
@@ -203,7 +299,7 @@
         width: fit-content;
         &:hover, &:focus{
             background-size: 100% 100%;
-            color: var(--c-brand-main);
+            /*color: var(--c-brand-main);*/
         }
     }
 
@@ -239,6 +335,7 @@
         text-decoration: none;
         color: var(--c-text);
         font-family: var(--font-base);
+        font-size: var(--fs-p);
     }
 
     p a {
