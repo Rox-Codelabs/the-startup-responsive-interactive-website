@@ -302,39 +302,13 @@
         }
     }
 
-    /*---- navigatie ----*/
-    nav .hoofdnavigatie{
-        &:hover {}
-        &:focus{}
-        &:visited{}
-        &:active{}
-
-        svg{
-            &:hover {}
-        }
-    }
-
-    nav .paginanavigatie{
-        &:hover {}
-        &:focus{}
-        &:visited{}
-        &:active{}
-    }
-
-    nav .footernavigatie{
-        &:hover {}
-        &:focus{}
-        &:visited{}
-        &:active{} 
-    }
-
     /*---- Linkjes styling ----*/
-
     a{
         text-decoration: none;
         color: var(--c-text);
         font-family: var(--font-base);
         font-size: var(--fs-p);
+        font-weight: var(--fw-bold);
     }
 
     .link {
@@ -359,6 +333,9 @@
         &:hover {
             background-size: 100% 100%;
         }
+    }
+    footer a{
+        font-weight: var(--fw-medium);
     }
 
     .onderstreept{
