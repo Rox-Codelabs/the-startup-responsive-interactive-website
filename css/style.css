@@ -39,6 +39,16 @@ header{
     .article-card{
         position: relative;
         .article-visual{
+            background-repeat: no-repeat;
+            &.voetbal {background-image: url('../assets/images/voetbalinternational/voetbal-figure.webp');}
+            &.lunar {background-image: url('../assets/images/lunar/lunar-figure.webp');}
+            &.dushi {background-image: url('../assets/images/dushi/dushie-figure.webp');}
+            &.munji {background-image: url('../assets/images/munji/munji-figure.webp');}
+            &.jurriens {background-image: url('../assets/images/jurriens/jurriens-figure.webp');}
+            &.eurid {background-image: url('../assets/images/eurid/eurid-figure.webp');}
+            &.invest {background-image: url('../assets/images/invest/invest-figure.webp');}
+            &.janshoeve {background-image: url('../assets/images/janshoeve/gerrit-Janshoeve-figure.png');}
+            
             img{}
         }
         .article-text{
