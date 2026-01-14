@@ -9,14 +9,15 @@
 </head>
 <body>
     <header>
-        <a href="https://labelvier.nl/">
-            <img src="./assets/images/logo.svg" alt="Label Vier – naar de homepage">
+        <a class="logo" href="https://labelvier.nl/">
+            <img  src="./assets/images/logo.svg" alt="Label Vier – naar de homepage">
         </a>
 
-        <button class="hoofdnavigatie-btn btn theme-accent" aria-label="open hoofdnavigatie">
-            <svg class="menu-open-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-            <svg class="menu-close-btn hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+        <button class="hoofdnavigatie-btn btn" aria-label="open hoofdnavigatie">
+            <svg class="menu-open-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+            <svg class="menu-close-btn hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </button>
+
         <nav class="hoofdnavigatie hidden" aria-label="hoofdnavigatie">
 
             <form class="zoek-form">
@@ -30,33 +31,34 @@
                 </button>
             </form>
 
-
             <ul>
-                <li><a href="https://labelvier.nl/onze-methode/">methode</a></li>
+                <li><a class="breakout-a" href="https://labelvier.nl/onze-methode/">methode</a></li>
 
-                <li class="diensten">
+                <li class="menu-item has-submenu diensten">
                     <a href="https://labelvier.nl/diensten/">diensten</a>
-                    <button class="caret-diensten" aria-expanded="false" aria-controls="diensten-submenu">
-                        <span class="invisable">Submenu diensten openen</span>
+                    <button class="menu-caret" aria-expanded="false" aria-controls="diensten-submenu">
+                          <span class="invisable">Submenu diensten openen</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                     </button>
-                    <ul id="diensten-submenu" class="hidden">
-                        <li><a href="https://labelvier.nl/diensten/personas-ontwikkelen/">persona’s</a></li>
-                        <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">klantreizen</a></li>
-                        <li><a href="https://labelvier.nl/diensten/contentstrategie/">contentstrategie</a></li>
-                        <li><a href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/ontwikkeling/">ontwikkeling</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">hosting & support</a></li>
+                    <ul id="diensten-submenu" class="hidden submenu">
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/personas-ontwikkelen/">persona’s</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">klantreizen</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/contentstrategie/">contentstrategie</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/ontwikkeling/">ontwikkeling</a></li>
+                        <li><a class="submenu-link" href="https://labelvier.nl/diensten/label-vier-support/">hosting & support</a></li>
                     </ul>
                 </li>
 
-                <li>
+                <li class="menu-item has-submenu overons">
                     <a href="https://labelvier.nl/over-ons/">over ons</a>
-                    <button class="caret-overons" aria-expanded="false" aria-controls="overons-submenu">
+                    <button class="menu-caret" aria-expanded="false" aria-controls="overons-submenu">
                         <span class="invisable">Submenu over ons openen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                     </button>
-                    <ul id="overons-submenu" class="hidden">
-                        <li><a href="https://labelvier.nl/werken-bij-label-vier/">Werken bij</a></li>
+                    <ul id="overons-submenu" class="hidden submenu">
+                        <li><a class="submenu-link" href="https://labelvier.nl/werken-bij-label-vier/">werken bij</a></li>
                     </ul>
                 </li>
 
@@ -78,9 +80,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>Hoe we de webshop van Voetbal International toekomstbestendig maakten</h2>
+                    <h2><span class="mark">Hoe we de webshop van Voetbal International toekomstbestendig maakten</span></h2>
                     <p>Voetbal International (VI) kwam bij ons met een technisch verouderde webshop die toe was aan vernieuwing. Wij migreerden naar een nieuw platform, verbeterden stabiliteit en gebruikservaring, en maakte ...</p>
-                    <a href="./paginas/voetbalinternational.html" class="breakout-a">lees meer <span class="opacity-0">over voetbal international</span></a>
+                    <a href="./paginas/voetbalinternational.html" class="breakout-a">lees verder<span class="opacity-0">over voetbal international</span></a>
                 </div>
             </article>
 
@@ -91,9 +93,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>Fresh Foward en LUNAR Institute: zo ontwikkelden we twee unieke websites met dezelfde basis</h2>
+                    <h2 class="mark">Fresh Foward en LUNAR Institute: zo ontwikkelden we twee unieke websites met dezelfde basis</h2>
                     <p>Twee organisaties met een eigen identiteit, maar met dezelfde kijk op vernieuwing. Fresh Forward helpt organisaties hun visie en strategie door te vertalen naar mindset en gedrag binnen teams. LUNAR I ...</p>
-                    <a href="./paginas/lunar.html" class="breakout-a">lees meer <span class="opacity-0">over Lunar institue en fresh forward</span></a>
+                    <a href="./paginas/lunar.html" class="breakout-a">lees verder<span class="opacity-0">over Lunar institue en fresh forward</span></a>
                 </div>
             </article>
 
@@ -104,9 +106,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>Website Dushi Huis: een digitaal thuis waar het leven gevierd wordt</h2>
+                    <h2 class="mark">Website Dushi Huis: een digitaal thuis waar het leven gevierd wordt</h2>
                     <p>Dushi Huis biedt kinderen en jongeren van 4 tot 18+ jaar, die niet meer thuis kunnen wonen, een kleinschalige, veilige woonplek in een echt huis. Daarom maakten we voor Dushi Huis een website die voel ...</p>
-                    <a href="./paginas/dushihuis.html" class="breakout-a">lees meer <span class="opacity-0">over Dushi Huis</span></a>
+                    <a href="./paginas/dushihuis.html" class="breakout-a">lees verder<span class="opacity-0">over Dushi Huis</span></a>
                 </div> 
             </article>
 
@@ -117,9 +119,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>MUNJI: zo bouwden we een webshop voor dit bordspel</h2>
+                    <h2 class="mark">MUNJI: zo bouwden we een webshop voor dit bordspel</h2>
                     <p>MUNJI – The Green Revolution Game is een nieuw bordspel waarin spelers de wereld vergroenen. Hun vraag aan ons was helder: “Kunnen jullie een webshop bouwen?” Dat leek ons een mooie  ...</p>
-                    <a href="./paginas/munji.html" class="breakout-a">lees meer <span class="opacity-0">over Munji</span></a>
+                    <a href="./paginas/munji.html" class="breakout-a">lees verder<span class="opacity-0">over Munji</span></a>
                 </div>
             </article>
 
@@ -130,9 +132,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>Een eregalerij voor Jurriëns</h2>
+                    <h2 class="mark">Een eregalerij voor Jurriëns</h2>
                     <p>Wat hebben Felix Meritis, Gran Hotel Amrâth in Amsterdam en het Muntgebouw in Utrecht gemeen? Deze historische en monumentale gebouwen zijn weer in oude glorie hersteld door Jurriëns. Van restauratie  ...</p>
-                    <a href="./paginas/jurriens.html" class="breakout-a">lees meer <span class="opacity-0">over Jurriens</span></a>
+                    <a href="./paginas/jurriens.html" class="breakout-a">lees verder<span class="opacity-0">over Jurriens</span></a>
                 </div>   
             </article>
 
@@ -143,9 +145,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>EURid: een website voor de .eu-domeinnamen</h2>
+                    <h2 class="mark">EURid: een website voor de .eu-domeinnamen</h2>
                     <p>EURid is de uitgever van alle domeinnamen die eindigen op .eu, .ею (Cyrillisch schrift) en .ευ (Grieks schrift). Het gedeelte achter de ‘.’ in een websitelink heet een domeinextensie. Dus bij eurid.eu ...</p>
-                    <a href="./paginas/eurid.html" class="breakout-a">lees meer <span class="opacity-0">over EURid</span></a>
+                    <a href="./paginas/eurid.html" class="breakout-a">lees verder<span class="opacity-0">over EURid</span></a>
                 </div>
             </article>
 
@@ -156,9 +158,9 @@
                 </div>
 
                 <div class="article-text">
-                    <h2>Zo versimpelden we de complexe website van Invest International</h2>
+                    <h2 class="mark">Zo versimpelden we de complexe website van Invest International</h2>
                     <p>Invest International kwam met de wens voor een website die naadloos aansluit op de vragen van hun doelgroep. Ook wilden ze graag gelijk duidelijk maken wat ze doen. Een mooie uitdaging, vonden we. We  ...</p>
-                    <a href="./paginas/investinternational.html" class="breakout-a">lees meer <span class="opacity-0">over Invest International</span></a>
+                    <a href="./paginas/investinternational.html" class="breakout-a">lees verder<span class="opacity-0">over Invest International</span></a>
                 </div>
             </article>
 
@@ -169,19 +171,19 @@
                     <img src="./assets/images/janshoeve/gerrit-Janshoeve-logo.webp" alt="Janshoeve">       
                 </div>
                 <div class="article-text">
-                    <h2>Een multisite voor Gerrit Jans Hoeve</h2>
+                    <h2 class="mark">Een multisite voor Gerrit Jans Hoeve</h2>
                     <p>Hoe zorg je ervoor dat 5 websites verschillend zijn, maar toch eenheid uitstralen? Met deze uitdagende vraag gingen we aan de slag voor Gerrit Jans Hoeve. Een bedrijf dat bestaat uit de vakantieparken ...</p>
-                    <a href="https://labelvier.nl/case/een-multisite-voor-gerrit-jans-hoeve/" class="breakout-a">lees meer <span class="opacity-0">over Gerrit Jans Hoeve</span></a>
+                    <a href="https://labelvier.nl/case/een-multisite-voor-gerrit-jans-hoeve/" class="breakout-a">lees verder<span class="opacity-0">over Gerrit Jans Hoeve</span></a>
                 </div>       
             </article>
 
             <nav class="paginanavigatie" aria-label="paginanavigatie">
                 <ol>
-                    <li><a aria-current="page" href="./cases-page1.html">1</a></li>
-                    <li><a href="./pages/cases-page2.html">2</a></li>
-                    <li><a href="./pages/cases-page3.html">3</a></li>
-                    <li><a href="./pages/cases-page4.html">4</a></li>
-                    <li><a href="./pages/cases-page2.html" aria-label="Ga naar volgende pagina"></a></li>
+                    <li><a class="btn theme-accent" aria-current="page" href="./cases-page1.html">1</a></li>
+                    <li><a class="btn theme-main" href="./pages/cases-page2.html">2</a></li>
+                    <li><a class="btn theme-main" href="./pages/cases-page3.html">3</a></li>
+                    <li><a class="btn theme-main" href="./pages/cases-page4.html">4</a></li>
+                    <li><a class="btn theme-main next" href="./pages/cases-page2.html" aria-label="Ga naar volgende pagina"></a></li>
                 </ol>
             </nav>
         </section>
@@ -197,21 +199,24 @@
         <div class="upper-footer">
             <section class="bedrijf-info-section">
                 <h3>Label <strong>Vier</strong></h3>
-                <address>Printerweg 10 (4e verdieping) 3821 AD Amersfoort</address>
+                <address>
+                    <span>Printerweg 10 (4e verdieping)</span>
+                    <span>3821 AD Amersfoort</span>  
+                </address>
                 <a class="onderstreept" href="mailto:hallo@labelvier.nl">hallo@labelvier.nl</a>
             </section>
             <section class="diensten-section">
                 <h3>Diensten</h3>
                 <nav class="footernavigatie"><!--aria-label="dienstennavigatie" niet nodig want heading-->
                     <ul>
-                        <li><a href="https://labelvier.nl/onze-methode/">Label Vier methode</a></li>
-                        <li><a href="https://labelvier.nl/wetenschappelijk-fundament/">Ons wetenschappelijk fundament</a></li>
-                        <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">Klantreizen</a></li>
-                        <li><a href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/ontwikkeling/">Ontwikkeling</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">Hosting & support</a></li>
-                        <li><a href="https://status.labelvier.nl/">Status page</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/onze-methode/">Label Vier methode</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/wetenschappelijk-fundament/">Ons wetenschappelijk fundament</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">Klantreizen</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/ontwikkeling/">Ontwikkeling</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/label-vier-support/">Hosting & support</a></li>
+                        <li><a class="footer-link" href="https://status.labelvier.nl/">Status page</a></li>
                     </ul>
                 </nav>
             </section>
@@ -220,27 +225,25 @@
                 <h3>Informatie</h3>
                 <nav class="footernavigatie"><!--aria-label="informatienavigatie" niet nodig want heading-->
                     <ul>
-                        <li><a href="https://labelvier.nl/jouw-privacy/">Jouw privacy</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/algemene-voorwaarden-label-vier/">Algemene voorwaarden</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">Label Vier support</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/jouw-privacy/">Jouw privacy</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/label-vier-support/algemene-voorwaarden-label-vier/">Algemene voorwaarden</a></li>
+                        <li><a class="footer-link" href="https://labelvier.nl/diensten/label-vier-support/">Label Vier support</a></li>
                     </ul>
                 </nav>
                 <button class="onderstreept" type="button">Cookie voorkeuren</button>
             </section>
         </div>
-        
-
-        <section class="lower-footer">
-            <h3>Als eerste onze <strong>blogs</strong> lezen?</h3>
-            <form class="inschrijven-form">
-                <label for="newsletter-email">
-                    <span class="opacity-0 absolute">e-mailadres</span>
-                </label>
-                <input placeholder="e-mailadres" id="newsletter-email" type="email" required>
-                <button class="btn theme-main-reversed" type="submit">ik wil de nieuwsbrief</button>
-            </form>
-        </section>
     </footer>
+    <section class="lower-footer">
+        <h3>Als eerste onze <strong>blogs</strong> lezen?</h3>
+        <form class="inschrijven-form">
+            <label for="newsletter-email">
+                <span class="opacity-0 absolute">e-mailadres</span>
+            </label>
+            <input placeholder="e-mailadres" id="newsletter-email" type="email" required>
+            <button class="btn theme-main-reversed" type="submit">ik wil de nieuwsbrief</button>
+        </form>
+    </section>
 
     <script src="./js/script.js"></script> 
 </body>
