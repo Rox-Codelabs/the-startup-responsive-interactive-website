@@ -58,6 +58,7 @@ header{
             padding: 1rem;
             position: relative;
             text-align: left;
+            text-wrap: none;
 
             background-color: var(--c-bg-main);
             background-image: var(--g-theme-text);
