@@ -121,7 +121,7 @@ header{
 
 
 .article-section{
-    padding: 2rem;
+    padding: 2em;
     .article-card{
         position: relative;
         @media (min-width:520px) {
@@ -257,8 +257,19 @@ footer{
     */
     
     .upper-footer{
-        margin-top: 3.5rem;
+        margin: 3.5rem auto 23rem auto;
+
+        @media (min-width:770px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10rem;
+        }
+        @media (min-width:850px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
         .bedrijf-info-section{
+            margin-top: 2rem;
             address{
                 font-style: normal;
                 font-size: var(--fs-p);
@@ -302,6 +313,13 @@ footer{
     display: flex;
     flex-direction: column;
     padding-bottom: 7rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: .5s ease, color .5s ease;
     h3{
         color: var(--c-bg-main);
     }
@@ -311,14 +329,16 @@ footer{
         label{
             span{}
         }
-        input{
-            
-        }
+
     }
     button{
         margin-left: auto;
         margin-top: 0.5rem;
         background-color: var(--c-bg-main);
         font-size: var(--fs-a-a);
+    }
+    &.footer-scroll{
+       opacity: 1;
+       transform: translateY(0);
     }
 }

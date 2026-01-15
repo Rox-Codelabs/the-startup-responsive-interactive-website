@@ -39,3 +39,21 @@ caretO.addEventListener('click', function() {
     submenuOverons.classList.toggle('hidden');
     caretO.classList.toggle('flipped');
 });
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------overons submenu open en dicht
+// Stap 1
+
+const lowerFooter = document.querySelector('.lower-footer');
+const scrollArea = window;
+
+window.addEventListener('scroll', function(){
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+        //Stap 3
+        lowerFooter.classList.add('footer-scroll');
+    }
+    else {
+        lowerFooter.classList.remove('footer-scroll');
+    }
+});
