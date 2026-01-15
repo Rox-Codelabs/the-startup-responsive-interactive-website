@@ -376,13 +376,8 @@
     .opacity-0{opacity: 0;}
     .opacity-1{opacity: 1;}
 
-    /**/ 
-    .absolute{position: absolute;}
-    .relative{position: relative}
-
     /**/
-    .block{display: block;}
-    .inline{display: inline;}
     .hidden{display: none;}
+    .absolute{position: absolute;} /*houden*/ 
 }
 

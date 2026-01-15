@@ -25,6 +25,7 @@ const submenuDiensten = document.getElementById('diensten-submenu');
 caretD.addEventListener('click', function() {
     // Stap 3
     submenuDiensten.classList.toggle('hidden');
+    caretD.classList.toggle('flipped');
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -33,7 +34,8 @@ caretD.addEventListener('click', function() {
 const caretO = document.querySelector('.overons .menu-caret');
 const submenuOverons = document.getElementById('overons-submenu');
 // Stap 2
-caretO.addEventListener('click', function() {   // <-- hier moet caretO staan
+caretO.addEventListener('click', function() { 
     // Stap 3
     submenuOverons.classList.toggle('hidden');
+    caretO.classList.toggle('flipped');
 });
