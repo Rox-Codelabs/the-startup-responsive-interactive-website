@@ -40,13 +40,36 @@ caretO.addEventListener('click', function() {
     caretO.classList.toggle('flipped');
 });
 
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------- header animatie
+// Stap 1
+
+const header = document.querySelector('header');
+const scrollArea = window;
+
+// Stap 2
+scrollArea.addEventListener('scroll', function(){
+    // Stap 3
+    header.classList.add('hidden-header');
+});
+
+// ---------------------------------Als helemaal omhoog is gescrolled
+// Stap 1 hoeft niet meer
+// Stap 2
+window.addEventListener('scroll', function(){
+    if (window.scrollY === 0){
+        //Stap 3
+        header.classList.remove('hidden-header');
+    }
+});
+
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
-// ---------------------------------overons submenu open en dicht
+// --------------------------------- footer animatie
 // Stap 1
 
 const lowerFooter = document.querySelector('.lower-footer');
-const scrollArea = window;
 
 window.addEventListener('scroll', function(){
     if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
