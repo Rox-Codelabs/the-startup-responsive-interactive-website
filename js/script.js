@@ -14,6 +14,7 @@ menuBtn.addEventListener('click', function(){
     svgClose.classList.toggle('hidden'); 
     logo.classList.toggle('hidden');
     document.body.classList.toggle('menu-open');
+    window.scrollTo(0, 0);
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
