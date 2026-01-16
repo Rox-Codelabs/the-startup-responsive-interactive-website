@@ -1,8 +1,6 @@
-Ontwerp en maak een responsive website voor een startup.
-
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
+<img width="1024" height="1024" alt="url_qrcodecreator com_10_06_17" src="https://github.com/user-attachments/assets/f73af81a-82f0-4c34-b2e4-d55f1cc20c56" />
 # Titel
+
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
