@@ -28,7 +28,6 @@ caretD.addEventListener('click', function() {
     caretD.classList.toggle('flipped');
 });
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------overons submenu open en dicht
 // Stap 1
 const caretO = document.querySelector('.overons .menu-caret');
@@ -41,7 +40,7 @@ caretO.addEventListener('click', function() {
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
-// --------------------------------- header animatie
+// --------------------------------- header scroll animatie
 // Stap 1
 
 const header = document.querySelector('header');
