@@ -172,27 +172,6 @@
         font-weight: var(--fw-bold);
     }
 
-    .article-card h2{
-        color: var(--c-text);
-        background-color: var(--c-bg-main);
-        background-color: transparent;
-        background-image: var(--g-heading);
-        background-size: 0 100%;
-        transition: .5s ease;
-        background-repeat: no-repeat;
-        display: inline;
-        &:hover{
-            background-size: 100% 100%;
-            color: var(--c-bg-main);
-        }
-    }
-    .article-card:hover{
-        h2{
-            background-size: 100% 100%;
-            color: var(--c-bg-main);
-        }
-    }
-
     /*---- list styling ----*/
     ul, ol{
         list-style: none;

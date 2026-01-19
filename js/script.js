@@ -14,7 +14,6 @@ menuBtn.addEventListener('click', function(){
     svgClose.classList.toggle('hidden'); 
     logo.classList.toggle('hidden');
     document.body.classList.toggle('menu-open');
-    window.scrollTo(0, 0);
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,6 +61,18 @@ window.addEventListener('scroll', function(){
         header.classList.remove('hidden-header');
     }
 });
+
+window.addEventListener('scroll', function(){
+    //Stap 3
+    if (!document.body.classList.contains('menu-open')) {
+        if (window.scrollY > 0) {
+            header.classList.add('hidden-header');
+        } else {
+            header.classList.remove('hidden-header');
+        }
+    }
+});
+
 
 
 
