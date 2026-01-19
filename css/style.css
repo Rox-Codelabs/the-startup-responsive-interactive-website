@@ -225,7 +225,7 @@ main{
                     }
                 }
                 &::after{
-                    content: url('../assets/icons/pijltjeleesmeer.png');
+                    content: url('../assets/icons/arrow-narrow-right-black.svg');
                     position: absolute;
                     left: 5.5em;
                     bottom: 1.6em;
@@ -306,27 +306,31 @@ main{
 
 footer{
     padding: 2rem;
-    padding-bottom: 5em;
-    position: relative;
+    padding-bottom: 20em;
     background-color: var(--c-bg-accent);
-    
-    
     background-image: url('../assets/icons/footer-wave.svg');
     background-repeat: no-repeat; 
     background-size: 700vw 1.3vw; 
+    width: 100%;
     
-    margin: 3.5rem auto 19rem auto;
+    display: grid;
+    gap: 4rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
 
     @media (min-width:770px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, max-content);
         gap: 10rem;
     }
     @media (min-width:850px) {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
+        grid-template-columns: repeat(3, 1fr);
     }
+    @media (min-width:1200px) {
+        grid-template-columns: repeat(3, max-content);
+    }
+
     .bedrijf-info-section{
         margin-top: 2rem;
         address{
