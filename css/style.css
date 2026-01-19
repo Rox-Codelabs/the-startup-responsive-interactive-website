@@ -332,6 +332,10 @@ footer{
     }
     @media (min-width:850px) {
         grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 19rem;
+    }
+    @media (min-width:985px) {
+        padding-bottom: 14rem;
     }
     @media (min-width:1200px) {
         grid-template-columns: repeat(3, max-content);
