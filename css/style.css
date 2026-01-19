@@ -397,6 +397,8 @@ footer{
         color: var(--c-bg-main);
         grid-area: item1;
         margin-right: 1rem;
+        margin-bottom: 1rem;
+        transform: translateY(30%);
     }
     form{
         display: flex;
@@ -410,6 +412,7 @@ footer{
         font-size: var(--fs-a-a);
         grid-area: item3;
     }
+
     &.footer-scroll{
        opacity: 1;
        transform: translateY(0);
@@ -432,10 +435,9 @@ footer{
 
     @media (min-width:1200px) {
         justify-content: center;
-        > * {
-            max-width: 1200px;
-            width: 100%;
-        }
+       h3{
+        padding-right: 10rem;
+       }
     }
 
 }
