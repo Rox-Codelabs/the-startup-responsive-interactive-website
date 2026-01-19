@@ -372,7 +372,7 @@ footer{
 
 .lower-footer{
     background-color: var(--c-brand-main);
-    padding: 2rem;
+    padding: 2rem 2rem 7rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -380,7 +380,6 @@ footer{
       "item2"
       "item3"
     ;
-    padding-bottom: 7rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -396,6 +395,7 @@ footer{
         display: flex;
         flex-direction: column;
         grid-area: item2;
+        justify-content: center;
     }
     button{
         margin-top: 0.5rem;
@@ -421,11 +421,6 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "item1 item2 item3";
         padding-bottom: 2rem;
-        form{
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-        }
     }
 }
 
