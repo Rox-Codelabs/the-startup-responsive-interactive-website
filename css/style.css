@@ -139,6 +139,10 @@ header{
 
 main{
     padding: 2em;
+    @media (min-width:1200px) {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
 
 .article-section{
