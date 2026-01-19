@@ -373,8 +373,13 @@ footer{
 .lower-footer{
     background-color: var(--c-brand-main);
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "item1"
+      "item2"
+      "item3"
+    ;
     padding-bottom: 7rem;
     position: fixed;
     bottom: 0;
@@ -385,21 +390,42 @@ footer{
     transition: .5s ease, color .5s ease;
     h3{
         color: var(--c-bg-main);
+        grid-area: item1;
     }
     form{
         display: flex;
         flex-direction: column;
-
+        grid-area: item2;
     }
     button{
-        margin-left: auto;
         margin-top: 0.5rem;
         background-color: var(--c-bg-main);
         font-size: var(--fs-a-a);
+        grid-area: item3;
     }
     &.footer-scroll{
        opacity: 1;
        transform: translateY(0);
+    }
+    @media (min-width:850px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "item1 item1"
+            "item2 item3"
+        ;
+        button{
+            margin-top: 0rem;
+        }
+    }
+    @media (min-width:985px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "item1 item2 item3";
+        padding-bottom: 2rem;
+        form{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
     }
 }
 
