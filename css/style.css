@@ -307,11 +307,11 @@ main{
 footer{
     padding: 2rem;
     padding-bottom: 20em;
+    width: 100%;
     background-color: var(--c-bg-accent);
     background-image: url('../assets/icons/footer-wave.svg');
     background-repeat: no-repeat; 
     background-size: 700vw 1.3vw; 
-    width: 100%;
     
     display: grid;
     gap: 4rem;
@@ -319,47 +319,49 @@ footer{
     grid-template-columns: 1fr;
 
     @media (min-width:770px) {
-        display: grid;
         grid-template-columns: repeat(2, max-content);
         gap: 10rem;
     }
     @media (min-width:850px) {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     @media (min-width:1200px) {
         grid-template-columns: repeat(3, max-content);
     }
 
-    .bedrijf-info-section{
+    section{
         margin-top: 2rem;
-        address{
-            font-style: normal;
-            font-size: var(--fs-p);
-            font-family: var(--font-base);
-            display: flex;
-            flex-direction: column;
-            line-height: var(--lh-body);
-            padding-bottom: 0.5rem;
+        &.bedrijf-info-section{
+            address{
+                font-style: normal;
+                font-size: var(--fs-p);
+                font-family: var(--font-base);
+                display: flex;
+                flex-direction: column;
+                line-height: var(--lh-body);
+                padding-bottom: 0.5rem;
+            }
         }
-    }
-    .diensten-section{
-        margin-top: 2rem;
-        ul{
-            padding: 0;
-        }
-    }
-    .informatie-section{
-        margin-top: 2rem;
-        padding-bottom: 4em;
-        nav{
-            ul{padding: 0;}
-        }
-        button{
+
+        &.diensten-section{
             margin-top: 2rem;
-            border: none;
-            background: none;
-            font-size: var(--fs-p);
+            ul{
+                padding: 0;
+            }
+        }
+
+        &.informatie-section{
+            margin-top: 2rem;
+            padding-bottom: 4em;
+            nav{
+                ul{padding: 0;}
+            }
+            button{
+                margin-top: 2rem;
+                border: none;
+                background: none;
+                font-size: var(--fs-p);
+            }
         }
     }
 }
