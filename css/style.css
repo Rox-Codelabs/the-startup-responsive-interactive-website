@@ -330,28 +330,23 @@ footer{
     }
 
     section{
-        margin-top: 2rem;
-        &.bedrijf-info-section{
-            address{
-                font-style: normal;
-                font-size: var(--fs-p);
-                font-family: var(--font-base);
-                display: flex;
-                flex-direction: column;
-                line-height: var(--lh-body);
-                padding-bottom: 0.5rem;
-            }
+        margin-top: 5rem;
+
+        &.bedrijf-info-section address{
+            font-style: normal;
+            font-size: var(--fs-p);
+            font-family: var(--font-base);
+            display: flex;
+            flex-direction: column;
+            line-height: var(--lh-body);
+            padding-bottom: 0.5rem;
         }
 
-        &.diensten-section{
-            margin-top: 2rem;
-            ul{
-                padding: 0;
-            }
+        &.diensten-section ul{
+            padding: 0;
         }
 
         &.informatie-section{
-            margin-top: 2rem;
             padding-bottom: 4em;
             nav{
                 ul{padding: 0;}
