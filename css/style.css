@@ -10,6 +10,8 @@ body.menu-open {
     overflow: hidden;  
 }
 
+/*---Header stijling----------------------------------------------------------------------------------------------------------------------------*/
+
 header{
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 1rem;
@@ -45,9 +47,6 @@ header{
         z-index: 100;
         transition: transform 0.4s cubic-bezier(.4,0,.2,1), opacity 1s;
         transition-delay: 150ms;
-
-        &.hmenu-open{
-        }
         
         ul {
             padding-left: 0;
@@ -135,6 +134,8 @@ header{
         stroke-width: 0.09rem;
     }
 }
+
+/*---Main stijling----------------------------------------------------------------------------------------------------------------------------*/
 
 main{
     padding: 2em;
@@ -241,37 +242,34 @@ main{
     opacity: 0.1;
 }
 
+/*---Paginanavigatie----------------------------------------------------------------------------------------------------------------------------*/
+
 .paginanavigatie{
     padding: 5rem 0 5rem 0;
     ol{
         display: flex;
-        justify-content: flex-start;
-        padding: 0;
         gap: 1rem;
-        position: relative;
-        
-        a{
-            font-size: var(--fs-a-a);
-            color: var(--c-bg-main);
-            padding-left: 2.2rem;
-            padding-right: 2.2rem;
-            padding-top: 1rem;
-            padding-bottom: 0.5rem;
-            position: relative;
-            &:hover{
-                color: var(--c-brand-main);
-            }
-            &.next{
-                padding-left: 2.5rem;
-                padding-right: 2.5rem;
-            }
-            svg{
-                position: absolute;
-                transform: translate(-40%, -15%);
-                scale: 1.3;
-                stroke-width: 0.1rem;
-            }
-        }
+        padding: 0;
+        justify-content: flex-start;
+    }
+}
+
+.paginanavigatie a{
+    position: relative;
+    padding: 1rem 2.2rem 0.5rem;
+    font-size: var(--fs-a-a);
+    color: var(--c-bg-main);
+            
+    &:hover{
+        color: var(--c-brand-main);
+    }
+    &.next{
+        padding-inline: 2.5rem;
+    }
+    svg{
+        position: absolute;
+        transform: translate(-40%, -15%) scale(1.3);
+        stroke-width: 0.1rem;
     }
 }
 
@@ -284,6 +282,8 @@ main{
         font-size: var(--fs-p);
     }
 }
+
+/*---Footer stijling----------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
     padding: 2rem;
@@ -330,12 +330,7 @@ footer{
         margin-top: 2rem;
         padding-bottom: 4em;
         nav{
-            ul{
-                padding: 0;
-                li{
-                    a{}
-                }
-            }
+            ul{padding: 0;}
         }
         button{
             margin-top: 2rem;
@@ -365,9 +360,6 @@ footer{
     form{
         display: flex;
         flex-direction: column;
-        label{
-            span{}
-        }
 
     }
     button{
