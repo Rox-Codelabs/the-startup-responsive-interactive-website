@@ -157,10 +157,12 @@ header{
         width: 3.4rem;
         stroke-width: 0.09rem;
     }
+    @media (min-width:985px){
+        display: none;
+    }
 }
 
-@media (min-width:985px){
-}
+
 
 /*---Main-----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -280,7 +282,6 @@ main{
             .breakout-a{
                 position: static;
                 font-size: var(--fs-a-a);
-                position: relative;
                 @media (min-width:1200px) {
                     font-size: calc(var(--fs-a-a) + 0.1rem);
                 }
@@ -300,13 +301,7 @@ main{
                 }
                 &::after{
                     content: url('../assets/icons/arrow-narrow-right-black.svg');
-                    position: absolute;
-                    left: 5.5em;
-                    bottom: -0.4em;
-                    transition: all ease-in-out .3s;
-                }
-                .article-card:hover &::after {
-                    left: 8em;
+                    transition: transform 0.3s ease-in-out;
                 }
                 &:focus{
                     outline: none;
@@ -320,6 +315,7 @@ main{
 .article-card:hover .article-visual::after {
     opacity: 0.1;
 }
+
 
 /*---Paginanavigatie------------------------------------------------------------------------------------------------------------------------------*/
 
