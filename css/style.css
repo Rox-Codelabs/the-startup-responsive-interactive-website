@@ -323,10 +323,16 @@ main{
                         opacity: 1;
                     }
                 }
+                /*
                 &::after{
                     content: url('../assets/icons/arrow-narrow-right-black.svg');
                     transition: transform 0.3s ease-in-out;
-                }
+                    position: absolute;
+                    right: 35em;
+                    top: -4.1em;
+                    transform: translateX(0);
+                }*/
+    
                 &:focus{
                     outline: none;
                 }
@@ -339,7 +345,6 @@ main{
 .article-card:hover .article-visual::after {
     opacity: 0.1;
 }
-
 
 /*---Paginanavigatie------------------------------------------------------------------------------------------------------------------------------*/
 
