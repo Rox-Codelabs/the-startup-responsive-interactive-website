@@ -241,7 +241,7 @@ main{
                 opacity: .2;
                 transition: .3s ease-in-out all;
             }
-            
+            /*pagina 1*/
             &.voetbal {background-image: url('../assets/images/voetbalinternational/voetbal-figure.webp');}
             &.lunar {background-image: url('../assets/images/lunar/lunar-figure.webp');}
             &.dushi {background-image: url('../assets/images/dushi/dushie-figure.webp');}
@@ -250,6 +250,30 @@ main{
             &.eurid {background-image: url('../assets/images/eurid/eurid-figure.webp');}
             &.invest {background-image: url('../assets/images/invest/invest-figure.webp');}
             &.janshoeve {background-image: url('../assets/images/janshoeve/gerrit-Janshoeve-figure.png');}
+
+            /*pagina 2*/
+            &.commonland {background-image: url('../assets/images/projects-overig/commonland-figure.webp');}
+            &.kapr {background-image: url('../assets/images/projects-overig/KAPR-figure.webp');}
+            &.vereniging-de-oude-fiets {background-image: url('../assets/images/projects-overig/deoudefiets-figure.webp');}
+            &.dermaclinic {background-image: url('../assets/images/projects-overig/dermaclinic-figure.webp');}
+            &.yoni {background-image: url('../assets/images/projects-overig/yoni-figure.webp');}
+            &.hospitainer {background-image: url('../assets/images/projects-overig/hospitainer-figure.webp');}
+            &.vereniging-de-oude-fiets {background-image: url('../assets/images/projects-overig/deoudefiets-figure.webp');}
+            &.avs {background-image: url('../assets/images/projects-overig/AVS-figure.webp');}
+
+            /*pagina 3*/
+            &.balkonfabriek {background-image: url('../assets/images/projects-overig/balkonfabriek-figure.webp');}
+            &.fresh-forward {background-image: url('../assets/images/projects-overig/ff-figure.webp');}
+            &.beixo {background-image: url('../assets/images/projects-overig/beixo-figure.webp');}
+            &.peek {background-image: url('../assets/images/projects-overig/peek-figure.webp');}
+            &.nedles {background-image: url('../assets/images/projects-overig/nedles-figure.webp');}
+            &.knmv {background-image: url('../assets/images/projects-overig/knmv-figure.webp');}
+            &.motorrijders {background-image: url('../assets/images/projects-overig/motorrijders-figure.webp');}
+            &.knmv-2 {background-image: url('../assets/images/projects-overig/knmv-2-figure.webp');}
+            
+
+            /*pagina 4*/
+            &.fresh-forward-2 {background-image: url('../assets/images/projects-overig//ff-2-figure.webp');}
             
             img{
                 transition: all .3s ease-in-out;   

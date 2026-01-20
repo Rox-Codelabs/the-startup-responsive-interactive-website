@@ -4,236 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Label vier</title>
-    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
-    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <a href="https://labelvier.nl/">
-            <img src="./assets/logo.svg" alt="Label Vier – naar de homepage">
+        <a class="logo" href="./usertest-stop.html">
+            <img  src="./assets/images/logo.svg" alt="Label Vier – naar de homepage">
         </a>
 
-        <form role="search">
-            <label for="search">
-                Zoeken..
-                <input id="search" type="search">
-            </label>
-            
-            <button type="submit" aria-label="zoeken">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-            </button>
-        </form>
+        <nav class="hoofdnavigatie opacity-0">
 
-        <nav class="hoofdnavigatie" aria-label="hoofdnavigatie">
+            <form class="zoek-form">
+                <label for="search-input">
+                    <input class="breakout-a" type="search" id="search-input" placeholder="Zoeken..">
+                </label>
+                
+                <button type="submit" aria-label="zoeken">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                </button>
+            </form>
+
             <ul>
-                <li><a href="https://labelvier.nl/onze-methode/">methode</a></li>
+                <li><a class="breakout-a" href="./usertest-stop.html">methode</a></li>
 
-                <li>
-                    <a href="https://labelvier.nl/diensten/">diensten</a>
-                    <button aria-expanded="false" aria-controls="diensten-submenu">
-                        <span class="visually-hidden">Submenu diensten openen</span>
+                <li class="diensten">
+                    <a class="menu-item has-submenu" href="./usertest-stop.html">diensten</a>
+                    <button class="menu-caret" aria-expanded="false" aria-controls="diensten-submenu">
+                        <span class="invisable">Submenu diensten openen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                     </button>
-                    <ul id="diensten-submenu">
-                        <li><a href="https://labelvier.nl/diensten/personas-ontwikkelen/">persona’s</a></li>
-                        <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">klantreizen</a></li>
-                        <li><a href="https://labelvier.nl/diensten/contentstrategie/">contentstrategie</a></li>
-                        <li><a href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/ontwikkeling/">ontwikkeling</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">hosting & support</a></li>
+                    <ul id="diensten-submenu" class="opacity-0 submenu">
+                        <li><a href="./usertest-stop.html">persona’s</a></li>
+                        <li><a href="./usertest-stop.html">klantreizen</a></li>
+                        <li><a href="./usertest-stop.html">contentstrategie</a></li>
+                        <li><a href="./usertest-gelukt.html">UX design</a></li>
+                        <li><a href="./usertest-stop.html">UI design</a></li>
+                        <li><a href="./usertest-stop.html">ontwikkeling</a></li>
+                        <li><a href="./usertest-stop.html">hosting & support</a></li>
                     </ul>
                 </li>
 
-                <li>
-                    <a href="https://labelvier.nl/over-ons/">over ons</a>
-                    <button aria-expanded="false" aria-controls="overons-submenu">
-                        <span class="visually-hidden">Submenu over ons openen</span>
+                <li class="overons">
+                    <a class="menu-item has-submenu" href="./usertest-stop.html">over ons</a>
+                    <button class="menu-caret" aria-expanded="false" aria-controls="overons-submenu">
+                        <span class="invisable">Submenu over ons openen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                     </button>
-                    <ul id="overons-submenu">
-                        <li><a href="https://labelvier.nl/werken-bij-label-vier/">Werken bij</a></li>
+                    <ul id="overons-submenu" class="opacity-0 submenu">
+                        <li><a class="submenu-link" href="./usertest-stop.html">werken bij</a></li>
                     </ul>
                 </li>
 
-                <li><a href="./cases-page1.html">werk</a></li>
-                <li><a href="https://labelvier.nl/blog/">blog</a></li>
-                <li><a href="https://labelvier.nl/contact-label-vier/">contact</a></li>
+                <li ><a class="menu-active" href="./index.html">werk</a></li>
+                <li><a href="./usertest-stop.html">blog</a></li>
+                <li class="contact"><a href="./usertest-stop.html">contact</a></li>
             </ul>
         </nav>
+
     </header>
+    <button class="hoofdnavigatie-btn btn" aria-label="open hoofdnavigatie">
+        <svg class="menu-open-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        <svg class="menu-close-btn hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    </button>
 
     <main>
-        <section>
+        <section class="article-section">
             <h1><strong>Projecten</strong> waar we trots op zijn!</h1>
 
-            <!--commonland-->
+            <!--Commonland-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="../assets/images/cases-page-2/commonland-logo.webp" alt="Voetbal international" class="logo">       
-                </div>
+                <figure class="article-visual commonland">
+                    <img src="./assets/images/projects-overig/commonland-logo.webp" alt="commonland" class="logo">       
+                </figure>
 
                 <div class="article-text">
                     <h2>Duidelijke gebruikersdoelen en communicatie voor Commonland</h2>
-                    <p>Commonland is een organisatie die wereldwijd landschappen herstelt voor een betere toekomst op onze planeet. Door de groei van het bedrijf en de omvang van de projecten waar Commonland aan werkt, werd ...</p>
-                    <a href="https://labelvier.nl/case/duidelijke-gebruikersdoelen-en-communicatie-voor-commonland/" class="breakout-a">lees meer</a>
+                    <p>ommonland is een organisatie die wereldwijd landschappen herstelt voor een betere toekomst op onze planeet. Door de groei van het bedrijf en de omvang van de projecten waar Commonland aan werkt, werd...</p>
+                    <a href="./paginas/voetbalinternational.html" class="breakout-a">lees verder<span class="opacity-0">over commonland</span></a>
                 </div>
             </article>
 
             <!--KAPR-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="../assets/images/cases-page-2/KAPR-logo.webp" alt="Lunar institue en fresh forward" class="logo">       
-                </div>
+                <figure class="article-visual kapr">
+                    <img src="./assets/images/projects-overig/KAPR-logo.webp" alt="KAPR" class="logo">       
+                </figure>
 
                 <div class="article-text">
                     <h2>KAPR, exclusieve haarstyling voor mannen</h2>
-                    <p>KAPR is gespecialiseerd in het ontwikkelen en verkopen van haarstylingsproducten aan kapperszaken. Om dit online goed door te voeren hebben we samen met hen om de tafel gezeten. Daaruit is de huidige ...</p>
-                    <a href="https://labelvier.nl/case/kapr-een-webshop-voor-haarfijne-producten/" class="breakout-a">lees meer</a>
+                    <p>KAPR is gespecialiseerd in het ontwikkelen en verkopen van haarstylingsproducten aan kapperszaken. Om dit online goed door te voeren hebben we samen met hen om de tafel gezeten. Daaruit is de huidige...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over KAPR</span></a>
                 </div>
             </article>
 
-            <!--de oude fiets-->
+            <!--vereniging-de-oude-fiets-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="../assets/images/cases-page-2/deoudefiets-logo.webp" alt="Dushi Huis">       
-                </div>
+                <figure class="article-visual vereniging-de-oude-fiets">
+                    <img src="./assets/images/projects-overig/deoudefiets-logo.webp" alt="vereniging de oude fiets">       
+                </figure>
 
                 <div class="article-text">
                     <h2>Documentatiebank vereniging de oude fiets</h2>
-                    <p>Voor Vereniging de oude fiets hebben wij een website ontworpen en ontwikkeld. Het is een platform voor en door liefhebbers van oude fietsen. Folders, kranten, boeken, tijdschr ...</p>
-                    <a href="https://labelvier.nl/case/documentatiebank-vereniging-de-oude-fiets/" class="breakout-a">lees meer</a>
+                    <p>Voor Vereniging de oude fiets hebben wij een website ontworpen en ontwikkeld. Het is een platform voor en door liefhebbers van oude fietsen. Folders, kranten, boeken, tijdschr...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over vereniging de oude fiets</span></a>
                 </div> 
             </article>
 
-            <!--MUNJI-->
+            <!--DermaClinic-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="./assets/images/munji-logo.png" alt="Munji">       
-                </div>
+                <figure class="article-visual dermaclinic">
+                    <img src="./assets/images/projects-overig/dermaclinic-logo.webp" alt="DermaClinic">       
+                </figure>
 
                 <div class="article-text">
-                    <h2>MUNJI: zo bouwden we een webshop voor dit bordspel</h2>
-                    <p>MUNJI – The Green Revolution Game is een nieuw bordspel waarin spelers de wereld vergroenen. Hun vraag aan ons was helder: “Kunnen jullie een webshop bouwen?” Dat leek ons een mooie  ...</p>
-                    <a href="https://labelvier.nl/case/munji-zo-bouwden-we-een-webshop-voor-dit-bordspel/" class="breakout-a">lees meer</a>
+                    <h2>DermaClinic: maatwerk website voor cosmetisch kliniek</h2>
+                    <p>DermaClinic is dé medisch cosmetische kliniek, gericht op huidverbetering en huidverjonging. Als cosmetische kliniek, laserkliniek en schoonheidssalon heeft DermaClinic alle professionals op beautyge...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over DermaClinic</span></a>
                 </div>
             </article>
 
-            <!--Jurriëns-->
+            <!--Yoni-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="./assets/images/jurriens-logo.png" alt="Jurriens">      
-                </div>
+                <figure class="article-visual yoni">
+                    <img src="./assets/images/projects-overig/yoni-logo.webp" alt="Yoni">      
+                </figure>
 
                 <div class="article-text">
-                    <h2>Een eregalerij voor Jurriëns</h2>
-                    <p>Wat hebben Felix Meritis, Gran Hotel Amrâth in Amsterdam en het Muntgebouw in Utrecht gemeen? Deze historische en monumentale gebouwen zijn weer in oude glorie hersteld door Jurriëns. Van restauratie  ...</p>
-                    <a href="https://labelvier.nl/case/een-eregalerij-voor-jurriens/" class="breakout-a">lees meer</a>
+                    <h2>Yoni: nieuwe webshop voor dit baanbrekende merk</h2>
+                    <p>Yoni is al een aantal jaren klant van Label Vier en we hebben al meerdere leuke projecten samen gedaan. We zijn ook verantwoordelijk voor de support op de website alleen deze hadden we niet zelf gebouw...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over Yoni</span></a>
                 </div>   
             </article>
 
-            <!--EURid-->
+            <!--Hospitainer-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="./assets/images/eurid-logo.webp" alt="EURid">       
-                </div>
+                <figure class="article-visual hospitainer">
+                    <img src="./assets/images/projects-overig/Hospitainer-logo.webp" alt="Hospitainer">       
+                </figure>
 
                 <div class="article-text">
-                    <h2>EURid: een website voor de .eu-domeinnamen</h2>
-                    <p>EURid is de uitgever van alle domeinnamen die eindigen op .eu, .ею (Cyrillisch schrift) en .ευ (Grieks schrift). Het gedeelte achter de ‘.’ in een websitelink heet een domeinextensie. Dus bij eurid.eu ...</p>
-                    <a href="https://labelvier.nl/case/eurid-een-website-voor-de-eu-domeinnamen/" class="breakout-a">lees meer</a>
+                    <h2>Hospitainer: een digitale oplossing in noodhospitalen</h2>
+                    <p>Hospitainer is een bedrijf dat noodhospitalen met bijbehorende medische materialen in de vorm van containers levert aan ramp- en oorlogsgebieden. Zij kwamen bij ons met de vraag: hoe kunnen wij p...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over Hospitainer</span></a>
                 </div>
             </article>
 
-            <!--Invest International-->
+            <!--vereniging de oude fiets-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="./assets/images/Invest-logo.webp" alt="Invest">       
-                </div>
+                <figure class="article-visual vereniging-de-oude-fiets">
+                    <img src="./assets/images/projects-overig/deoudefiets-logo.webp" alt="vereniging de oude fiets">       
+                </figure>
 
                 <div class="article-text">
-                    <h2>Zo versimpelden we de complexe website van Invest International</h2>
-                    <p>Invest International kwam met de wens voor een website die naadloos aansluit op de vragen van hun doelgroep. Ook wilden ze graag gelijk duidelijk maken wat ze doen. Een mooie uitdaging, vonden we. We  ...</p>
-                    <a href="https://labelvier.nl/case/zo-versimpelden-we-de-complexe-website-van-invest-international/" class="breakout-a">lees meer</a>
+                    <h2>Een nieuwe website voor vereniging de oude fiets</h2>
+                    <p>Vereniging de oude fiets is een vereniging van 650 leden die een liefde delen voor oude en antieke fietsen. De leden hebben toegang tot een documentatiebank met daarin histori...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over vereniging de oude fiets</span></a>
                 </div>
             </article>
 
 
-            <!--Gerrit Jans Hoeve-->
+            <!--Algemene Vereniging Schoolleiders avs-->
             <article class="article-card">
-                <div class="article-visual">
-                    <img src="./assets/images/gerrit-Janshoeve-logo.webp" alt="Janshoeve">       
-                </div>
+                <figure class="article-visual avs">
+                    <img src="./assets/images/projects-overig/AVS-logo.webp" alt="Algemene Vereniging Schoolleiders">       
+                </figure>
                 <div class="article-text">
-                    <h2>Een multisite voor Gerrit Jans Hoeve</h2>
-                    <p>Hoe zorg je ervoor dat 5 websites verschillend zijn, maar toch eenheid uitstralen? Met deze uitdagende vraag gingen we aan de slag voor Gerrit Jans Hoeve. Een bedrijf dat bestaat uit de vakantieparken ...</p>
-                    <a href="https://labelvier.nl/case/een-multisite-voor-gerrit-jans-hoeve/" class="breakout-a">lees meer</a>
+                    <h2>Maatwerk website voor de Algemene Vereniging Schoolleiders (AVS)</h2>
+                    <p>De website van de Algemene Vereniging Schoolleiders, kortweg AVS, was verouderd en moeilijk te onderhouden. Ze vroegen aan ons deze geheel te vernieuwen en ook alle inzichten van de afgelopen jaren hi...</p>
+                    <a href="./usertest-stop.html" class="breakout-a">lees verder<span class="opacity-0">over Algemene Vereniging Schoolleiders</span></a>
                 </div>       
             </article>
 
             <nav class="paginanavigatie" aria-label="paginanavigatie">
                 <ol>
-                    <li><a href="./cases-page1.html" aria-label="Ga naar vorige pagina"></a></li>
-                    <li><a href="./cases-page1.html"></a>1</li>
-                    <li><a aria-current="page" href="./pages/cases-page2.html">2</a></li>
-                    <li><a href="./pages/cases-page3.html">3</a></li>
-                    <li><a href="./pages/cases-page4.html">4</a></li>
-                    <li><a href="./pages/cases-page3.html" aria-label="Ga naar volgende pagina"></a></li>
+                    <li><a class="btn theme-main" href="./index.html">1</a></li>
+                    <li><a class="btn theme-accent" aria-current="page" href="./pagina-2.html">2</a></li>
+                    <li><a class="btn theme-main" href="./pagina-3.html">3</a></li>
+                    <li><a class="btn theme-main" href="./pagina-4.html">4</a></li>
+                    <li><a class="btn theme-main next" href="./pagina-3.html" aria-label="Ga naar volgende pagina">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                    </a></li>
                 </ol>
             </nav>
         </section>
 
-        <section>
+        <section class="contact-section">
             <h2>Wat kunnen we voor jou <strong>betekenen?</strong></h2>
-            <button class="btn theme-main">bekijk de mogelijkheden</button>
+            <a href="./usertest-stop.html" class="btn theme-main">bekijk de mogelijkheden</a>
         </section>
 
     </main>
 
-    <footer>
-        <div class="upper-footer">
-            <section>
-                <h3>Label Vier</h3>
-                <address>Printerweg 10 (4e verdieping) 3821 AD Amersfoort</address>
-                <a class="onderstreept" href="mailto:hallo@labelvier.nl">hallo@labelvier.nl</a>
-            </section>
-            <section>
-                <h3>Diensten</h3>
-                <nav class="footernavigatie"><!--aria-label="dienstennavigatie" niet nodig want heading-->
-                    <ul>
-                        <li><a href="https://labelvier.nl/onze-methode/">Label Vier methode</a></li>
-                        <li><a href="https://labelvier.nl/wetenschappelijk-fundament/">Ons wetenschappelijk fundament</a></li>
-                        <li><a href="https://labelvier.nl/diensten/tevreden-klanten-door-de-klantreis/">Klantreizen</a></li>
-                        <li><a href="https://labelvier.nl/diensten/brown-paper-sessie-interactieontwerp/">UX design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/digitaal-design/">UI design</a></li>
-                        <li><a href="https://labelvier.nl/diensten/ontwikkeling/">Ontwikkeling</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">Hosting & support</a></li>
-                        <li><a href="https://status.labelvier.nl/">Status page</a></li>
-                    </ul>
-                </nav>
-            </section>
-            
-            <section>
-                <h3>Informatie</h3>
-                <nav class="footernavigatie"><!--aria-label="informatienavigatie" niet nodig want heading-->
-                    <ul>
-                        <li><a href="https://labelvier.nl/jouw-privacy/">Jouw privacy</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/algemene-voorwaarden-label-vier/">Algemene voorwaarden</a></li>
-                        <li><a href="https://labelvier.nl/diensten/label-vier-support/">Label Vier support</a></li>
-                    </ul>
-                </nav>
-                <button class="onderstreept" type="button">Cookie voorkeuren</button>
-            </section>
-        </div>
-        
-
-        <section class="lower-footer">
-            <h3>Als eerste onze <strong>blogs</strong> lezen?</h3>
-            <form>
-                <label for="newsletter-email">e-mailadres</label>
-                <input id="newsletter-email" type="email" required>
-                <button type="submit">ik wil de nieuwsbrief</button>
-            </form>
+    <footer class="upper-footer">
+        <section class="bedrijf-info-section">
+            <h3>Label <strong>Vier</strong></h3>
+            <address>
+                <span>Printerweg 10 (4e verdieping)</span>
+                <span>3821 AD Amersfoort</span>  
+            </address>
+            <a class="onderstreept" href="mailto:hallo@labelvier.nl">hallo@labelvier.nl</a>
         </section>
+        <section class="diensten-section">
+            <h3>Diensten</h3>
+            <nav class="footernavigatie"><!--aria-label="dienstennavigatie" niet nodig want heading-->
+                <ul>
+                    <li><a class="footer-link" href="./usertest-stop.html">Label Vier methode</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Ons wetenschappelijk fundament</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Klantreizen</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">UX design</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">UI design</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Ontwikkeling</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Hosting & support</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Status page</a></li>
+                </ul>
+            </nav>
+        </section>
+            
+        <section class="informatie-section">
+            <h3>Informatie</h3>
+            <nav class="footernavigatie"><!--aria-label="informatienavigatie" niet nodig want heading-->
+                <ul>
+                    <li><a class="footer-link" href="./usertest-stop.html">Jouw privacy</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Algemene voorwaarden</a></li>
+                    <li><a class="footer-link" href="./usertest-stop.html">Label Vier support</a></li>
+                </ul>
+            </nav>
+            <button class="onderstreept" type="button">Cookie voorkeuren</button>
+        </section>  
+        
+        
     </footer>
+    <section class="lower-footer">
+        <h3>Als eerste onze <strong>blogs</strong> lezen?</h3>
+        <form id="newsletter-form" class="inschrijven-form">
+            <label for="newsletter-email">
+                <span class="opacity-0 absolute">e-mailadres</span>
+            </label>
+            <input placeholder="e-mailadres" id="newsletter-email" type="email" required>
+        </form>
+        <button form="newsletter-form" class="btn theme-main-reversed" type="submit">ik wil de nieuwsbrief</button>
+    </section>
 
     <script src="./js/script.js"></script> 
 </body>
