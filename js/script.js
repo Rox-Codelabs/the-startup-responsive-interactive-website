@@ -9,7 +9,7 @@ const logo = document.querySelector('.logo');
 // Stap 2
 menuBtn.addEventListener('click', function(){
     // Stap 3
-    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('invisable');
     menu.classList.toggle('open');
     svgOpen.classList.toggle('hidden');      
     svgClose.classList.toggle('hidden'); 
