@@ -9,70 +9,41 @@ const logo = document.querySelector('.logo');
 // Stap 2
 menuBtn.addEventListener('click', function(){
     // Stap 3
-    menu.classList.toggle('hidden');
+    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('open');
     svgOpen.classList.toggle('hidden');      
     svgClose.classList.toggle('hidden'); 
-    logo.classList.toggle('hidden');
     document.body.classList.toggle('menu-open');
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------diensten submenu open en dicht
 // Stap 1
-const caretD = document.querySelector('.diensten .menu-caret');
+const caretD = document.querySelector('.diensten .menu-caret svg');
 const submenuDiensten = document.getElementById('diensten-submenu');
 // Stap 2
 caretD.addEventListener('click', function() {
     // Stap 3
-    submenuDiensten.classList.toggle('hidden');
+    submenuDiensten.classList.toggle('opacity-0');
+    submenuDiensten.classList.toggle('open');
     caretD.classList.toggle('flipped');
 });
 
 // ---------------------------------overons submenu open en dicht
 // Stap 1
-const caretO = document.querySelector('.overons .menu-caret');
+const caretO = document.querySelector('.overons .menu-caret svg');
 const submenuOverons = document.getElementById('overons-submenu');
 // Stap 2
 caretO.addEventListener('click', function() { 
     // Stap 3
-    submenuOverons.classList.toggle('hidden');
+    submenuOverons.classList.toggle('opacity-0');
+    submenuOverons.classList.toggle('open');
     caretO.classList.toggle('flipped');
 });
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------- header scroll animatie
 // Stap 1
-
-const header = document.querySelector('header');
-const scrollArea = window;
-
-// Stap 2
-scrollArea.addEventListener('scroll', function(){
-    // Stap 3
-    header.classList.add('hidden-header');
-});
-
-// ---------------------------------Als helemaal omhoog is gescrolled
-// Stap 1 hoeft niet meer
-// Stap 2
-window.addEventListener('scroll', function(){
-    if (window.scrollY === 0){
-        //Stap 3
-        header.classList.remove('hidden-header');
-    }
-});
-
-window.addEventListener('scroll', function(){
-    //Stap 3
-    if (!document.body.classList.contains('menu-open')) {
-        if (window.scrollY > 0) {
-            header.classList.add('hidden-header');
-        } else {
-            header.classList.remove('hidden-header');
-        }
-    }
-});
-
 
 
 
