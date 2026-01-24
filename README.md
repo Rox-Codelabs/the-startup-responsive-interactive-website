@@ -1,7 +1,8 @@
 # README – Label Vier cases
-Voor deze opdracht heb ik de cases-functionaliteit van labelvier.nl nagemaakt. Het doel was om het ontwerp en de functionaliteit van de huidige website te behouden, maar alles opnieuw op te bouwen met eigen HTML, CSS en JavaScript.
+Dit project is een nabootsing van de cases-functionaliteit van labelvier.nl.
+Het doel was om de ontwerpen en functionaliteit van de originele website te behouden, maar alles opnieuw op te bouwen met eigen HTML, CSS en JavaScript.
 
-De focus lag niet alleen op het visueel kopiëren van de pagina’s, maar vooral op het verbeteren van de HTML-structuur. De website is opgebouwd met zo veel mogelijk semantische HTML5-elementen, zodat de structuur netter, logischer en beter aansluit op moderne webstandaarden.
+De focus lag niet alleen op visuele kopie, maar vooral op verbeterde HTML-structuur, met zoveel mogelijk semantische HTML5-elementen. Zo is de website netter, logischer en beter afgestemd op moderne webstandaarden.
 
 
 <img width="1918" height="787" alt="image" src="https://github.com/user-attachments/assets/423bc35d-2e89-4dff-853e-d6f8b5b38d01" />
