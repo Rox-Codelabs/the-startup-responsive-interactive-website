@@ -5,7 +5,6 @@ const menu = document.querySelector('.hoofdnavigatie');
 const menuBtn = document.querySelector('.hoofdnavigatie-btn');
 const svgOpen = document.querySelector('.menu-open-btn');
 const svgClose = document.querySelector('.menu-close-btn');
-const logo = document.querySelector('.logo');
 // Stap 2
 menuBtn.addEventListener('click', function(){
     // Stap 3
@@ -44,8 +43,6 @@ caretO.addEventListener('click', function() {
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------- header scroll animatie
 // Stap 1
-
-
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------- footer animatie

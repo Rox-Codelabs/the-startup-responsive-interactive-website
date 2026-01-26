@@ -19,7 +19,7 @@ header{
     z-index: 200;
     background-color: var(--c-bg-main);
     width: 100%;
-    transition: all .3s ease;
+    transition: transform .3s ease, opacity .3s ease;
     transition-delay: 150ms;
     transform: translateY(0);
     &.hidden-header{
@@ -161,8 +161,6 @@ header{
         
     }
 }
-
-
 
 /*---Main-----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -340,7 +338,6 @@ main{
         }
     }
 }
-
 
 .article-card:hover .article-visual::after {
     opacity: 0.1;
@@ -545,3 +542,4 @@ footer{
 }
 
 /*---Detail pagina---------------------------------------------------------------------------------------------------------------------------------------*/
+
